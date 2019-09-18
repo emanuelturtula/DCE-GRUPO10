@@ -1,0 +1,42 @@
+Circuit: * C:\Users\Ema\Desktop\CIRUITOS2\TP1\GeneradorTriangular.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Gmin = 100
+vernier = 0.5
+vernier = 0.25
+Gmin = 34.2672
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 33.0995
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+Gmin = 32.9705
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Wed Sep 18 19:13:57 2019
+Total elapsed time: 3.432 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 124271
+traniter = 122751
+tranpoints = 30922
+accept = 22413
+rejected = 8509
+matrix size = 121
+fillins = 302
+solver = Normal
+Thread vector: 17.9/10.4[2] 6.1/4.8[2] 6.7/2.5[2] 1.1/2.0[1]  2592/500
+Matrix Compiler1: 24.52 KB object code size  11.1/4.9/[1.6]
+Matrix Compiler2: 15.11 KB object code size  2.3/3.4/[1.9]
+

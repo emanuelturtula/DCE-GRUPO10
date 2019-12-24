@@ -1,0 +1,41 @@
+Circuit: * C:\Users\Ema\Desktop\DISEÑO\SIMULACIONES\TRIANGULAR\TRIANGULAR.asc
+
+WARNING: Less than two connections to node N003.  This node is used by V:U3:CCVS2_IN.
+WARNING: Less than two connections to node N010.  This node is used by V:U2:CCVS2_IN.
+u2:vccvs1_in: Missing value, assumed 0V @ DC
+u2:vccvs2_in: Missing value, assumed 0V @ DC
+u2:u2:vcccs1_in: Missing value, assumed 0V @ DC
+u2:u2:vam1: Missing value, assumed 0V @ DC
+u2:u12:vcccs1_in: Missing value, assumed 0V @ DC
+u2:u12:vam1: Missing value, assumed 0V @ DC
+u2:vam1: Missing value, assumed 0V @ DC
+u3:vccvs1_in: Missing value, assumed 0V @ DC
+u3:vccvs2_in: Missing value, assumed 0V @ DC
+u3:u2:vcccs1_in: Missing value, assumed 0V @ DC
+u3:u2:vam1: Missing value, assumed 0V @ DC
+u3:u12:vcccs1_in: Missing value, assumed 0V @ DC
+u3:u12:vam1: Missing value, assumed 0V @ DC
+u3:vam1: Missing value, assumed 0V @ DC
+Per .tran options, skipping operating point for transient analysis.
+Heightened Def Con from 4.52557e-006 to 4.52594e-006
+Heightened Def Con from 6.06483e-006 to 6.0652e-006
+
+Date: Sun Dec 22 21:39:44 2019
+Time to convert to fast access format: 0.050 seconds.
+Total elapsed time: 13.010 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 49212
+traniter = 49212
+tranpoints = 22068
+accept = 21468
+rejected = 602
+matrix size = 599
+fillins = 295
+solver = Alternate
+Thread vector: 121.7/55.3[8] 18.8/11.4[8] 31.7/8.8[8] 5.2/3.0[8]  2592/500
+Matrix Compiler1: 50.27 KB object code size  20.5/14.5/[5.4]
+Matrix Compiler2: 51.53 KB object code size  11.3/15.5/[4.6]
+

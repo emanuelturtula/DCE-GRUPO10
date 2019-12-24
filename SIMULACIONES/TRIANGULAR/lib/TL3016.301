@@ -1,0 +1,422 @@
+*TL3016
+*****************************************************************************
+* (C) Copyright 2012 Texas Instruments Incorporated. All rights reserved.                                            
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer.
+*****************************************************************************
+*
+* This model is subject to change without notice. Texas Instruments
+* Incorporated is not responsible for updating this model.
+*
+*****************************************************************************
+*
+** Released by: Analog eLab Design Center, Texas Instruments Inc.
+* Part: TL3016
+* Date: 11JAN2012
+* Model Type: ALL IN ONE
+* Simulator: TINA
+* Simulator Version: 9.1.30.94 SF-TI
+* EVM Order Number: N/A
+* EVM Users Guide: N/A
+* Datasheet: SLCS130D – MARCH 1997 – REVISED MARCH 2000
+*
+* Model Version: 1.0
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Version 1.0 : 
+* Release to Web
+*
+*****************************************************************************
+* OPERATING NOTES
+*Time step should be kept to 10p to observe exact behaviour of propagation delay
+
+*Features modelled
+*Offset voltage vs. Temperature
+*Supply rejection ratio
+*common mode rejection ratio
+*Input bias and offset current
+*Propagation delay vs. Overdrive
+*Propagation delay vs. Temperature
+*Propagation delay vs. Load cap
+*Propagation delay vs. Source impedance
+*Latch pin current
+*Latch threshold vs. Temperature
+*Supply current vs. Temperature
+*Supply current vs. input voltage
+*Supply current vs. switching frequency
+*VOH vs. Source current
+*VOL vs. Sink current
+*Pulse skew
+
+
+.SUBCKT TL3016 IN+ IN- VCC+ VCC- QOUT QBOUT LE GRND
+V3          16 17 200M
+IS3         GRND VCC+ 888U
+V6          29 GRND 2M
+V4          31 0 1.1
+VAM1        GRND 44 ; Current Arrow
+IS1         46 GRND 6.05U
+IS2         47 GRND 5.95U
+V2          48 GRND 5M
+V1          27 21 10M
+V8          49 GRND 5M
+V7          28 22 10M
+XU36        GRND LE LE GRND VCCS_LIMIT_0
+EVCVS7      17 GRND LE GRND  1
+XU35        THvsTemp GRND VCVS_LIMIT_0
+XU34        16 THvsTemp Enable COMP_HYST_BASIC_GEN_0
++ PARAMS: VDD=1 VEE=0 HYST=200m 
+XU33        20 Enable Vout_LAtch Dflop_0
+XU13        VimonQB GRND 21 VCC_CLP_QB VCVS_LIMIT_1
+XU23        Vimon GRND 22 VCC_CLP VCVS_LIMIT_1
+XU32        Vout_LAtch 23 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5 
+XU12        23 VCC+ GRND IQ_Vs_f_0
+XU2         Vout_LAtch VCC+ GRND IQ_Vs_f_0
+C8          VimonQB GRND 1U 
+R8          VimonQB 25 1K 
+C6          Vimon GRND 1U 
+R5          Vimon 26 1K 
+EVCVS6      27 GRND VCC+ GRND  1
+EVCVS1      28 GRND VCC+ GRND  1
+XU27        29 Vcap_30 IDEAL_D_0
+XU26        Vcap_30 31 IDEAL_D_0
+XU24        VEE_CLP 32 IDEAL_D_0
+XU25        32 VCC_CLP IDEAL_D_0
+XU21        VEE_CLP_QB 33 IDEAL_D_0
+XU20        33 VCC_CLP_QB IDEAL_D_0
+XU3         VCC+ GRND VCC+ GRND PSUPP_DCC_0
+XU22        Vout_LAtch 34 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+XU19        35 36 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+XU11        36 37 38 AND2_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+XU5         34 37 35 AND2_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+C5          33 GRND 20P 
+R4          34 39 721.5M 
+C1          39 GRND 1N 
+XU4         39 37 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+GVCCS3      33 VEE_CLP_QB 38 GRND  98M
+GVCCS2      VCC_CLP_QB 33 34 GRND  98M
+XU31        40 41 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+XU30        41 42 VF2 AND2_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+XU29        Vout_LAtch 42 40 AND2_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+C14         32 GRND 20P 
+R22         Vout_LAtch 43 721.5M 
+C11         43 GRND 1N 
+XU28        43 42 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+GVCCS6      32 VEE_CLP VF2 GRND  98M
+GVCCS5      VCC_CLP 32 Vout_LAtch GRND  98M
+XU18        45 IN+ VCVS_LIMIT_2
+XU14        GRND VimonQB VEE_CLP_QB 48 Vol_generator_0
+XU17        GRND Vimon VEE_CLP 49 Vol_generator_1
+XU16        50 20 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5 
+XU15        51 50 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5 
+C7          GRND 51 1N 
+R21         Gain 51 5.32 
+XU8         Vcap_30 53 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=.5 
+XU9         54 55 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5 
+R20         VEE_CLP_QB GRND 100G 
+R18         VCC_CLP_QB GRND 100G 
+VCCVS2_in   33 QBOUT
+HCCVS2      25 GRND VCCVS2_in   1K
+XU10        55 Gain INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5 
+R15         56 57 1.67K 
+R14         58 56 R_RES_1 100 
+R13         54 58 100 TC=230M
+C4          54 GRND 1P 
+C3          IN+ IN- 4.3P IC=0 
+XU7         53 57 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+R11         44 Vcap_30 1G 
+C2          Vcap_30 GRND 40N IC=0 
+GVCCS1      44 Vcap_30 46 47  3K
+EVCVS4      59 IN- IN+ IN-  500M
+EVCVS5      IN- 47 60 GRND  14.125U
+R3          60 59 1 
+XU6         GRND VCC- NSUPP_DCC_0
+XIsupplyvstemp VCC+ GRND CS_LIMIT_0
+R7          VEE_CLP GRND 100G 
+R6          VCC_CLP GRND 100G 
+VCCVS1_in   32 QOUT
+HCCVS1      26 GRND VCCVS1_in   1K
+EVCVS3      46 61 VCC- GRND  -10U
+EVCVS2      61 45 VCC+ GRND  -251.2U
+.MODEL R_RES_1 RES ( TCE=4.1)
+.ENDS
+
+.SUBCKT Dflop_0 IN Enable OUT
+XU1         Enable OUT 62 AND2_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+XU12        63 62 OUT OR2_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+XU5         Enable 64 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5 
+XU3         64 IN 63 AND2_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5
+.ENDS
+
+
+.SUBCKT IQ_Vs_f_0 VOUT I+ I-
+IS1         Vcap_65 0 500M
+VAM1        0 68 ; Current Arrow
+V4          69 0 600M
+V6          70 0 2M
+V1          71 0 5
+XU5         Vcap_65 VF1_66 INV_BASIC_GEN_SAN_0
++ PARAMS: VDD=1 VEE=0 VTH=0.5 
+GVCCS1      68 Vcap_65 67 0  1
+C2          Vcap_65 0 4N IC=0 
+R11         68 Vcap_65 1G 
+XU26        Vcap_65 69 IDEAL_D_0
+XU27        70 Vcap_65 IDEAL_D_0
+EVCVS1      67 0 VOUT 0  1
+VCCCS1_in   71 72
+FCCCS1      I+ I- VCCCS1_in   1
+SW2         73 0 VF1_66 0  S_VSWITCH_1
+SW1         72 73 67 0  S_VSWITCH_2
+.MODEL S_VSWITCH_1 VSWITCH (RON=1U ROFF=1G VON=1 VOFF=0)
+.MODEL S_VSWITCH_2 VSWITCH (RON=833.333 ROFF=1G VON=1 VOFF=0)
+.ENDS
+
+
+.SUBCKT Vol_generator_0 VC+ VC- VOUT+ VOUT-
+EVCVS6      VOUT+ VOUT- 83 VC-  1
+XU17        VC- VC+ VC- 83 VCCS_LIMIT_1
+D1          83 VC-  D_1N1183_1 
+R22         83 VC- 127 TC=5.2M
+.MODEL D_1N1183_1 D( IS=1P N=1.3 BV=50 IBV=5M RS=3M 
++      CJO=0 VJ=700M M=440M FC=0 TT=434.7N 
++      EG=1.11 XTI=3 KF=0 AF=1 )
+.ENDS
+
+
+.SUBCKT Vol_generator_1 VC+ VC- VOUT+ VOUT-
+EVCVS6      VOUT+ VOUT- 84 VC-  1
+XU17        VC- VC+ VC- 84 VCCS_LIMIT_1
+D1          84 VC-  D_1N1183_1 
+R22         84 VC- 127 TC=5.2M
+.MODEL D_1N1183_1 D( IS=1P N=1.3 BV=50 IBV=3M RS=8M 
++      CJO=0 VJ=700M M=440M FC=0 TT=434.7N 
++      EG=1.11 XTI=3 KF=0 AF=1 )
+.ENDS
+
+
+
+*VOLTAGE CONTROLLED SOURCE WITH LIMITS
+.SUBCKT VCCS_LIMIT_0  VC+ VC- IOUT+ IOUT-
+*              
+.PARAM GAIN = 1U
+.PARAM IPOS = 24U
+.PARAM INEG = 0
+G1 IOUT+ IOUT- VALUE={LIMIT(((38.81U*V(VC-,VC+))-52.45U),IPOS,INEG)}
+.ENDS VCCS_LIMIT_0 
+
+
+*VOLTAGE CONTROLLED SOURCE WITH LIMITS
+.SUBCKT VCVS_LIMIT_0  VOUT+ VOUT-
+*              
+.PARAM GAIN = 1
+.PARAM VPOS = 500U
+.PARAM VNEG = -435U
+E1 VOUT+ VOUT- VALUE={LIMIT(-3.75M*(TEMP) + 1.8125,2,1.2)}
+.ENDS VCVS_LIMIT_0 
+
+
+.SUBCKT COMP_HYST_BASIC_GEN_0  INP INM OUT PARAMS: VDD=1 VEE=0 HYST=24.87M 
+E_INV OUT_INV 0 VALUE = {((VDD+VEE)/2)-((VDD-VEE)/2)*TANH(10E6*(V(OUT1)-0.5))} 
+E_HYST INM1 INM VALUE = {((HYST)/2)+((HYST)/2)*TANH(10E6*(V(OUT_INV)-0.5))}
+E_COMP OUT 0 VALUE = {((VDD+VEE)/2)+((VDD-VEE)/2)*TANH(10E6*(V(INP)-V(INM1)))}
+R_DELAY OUT OUT1 1
+C_DELAY OUT1 0 10N
+.ENDS COMP_HYST_BASIC_GEN_0 
+
+
+*VOLTAGE CONTROLLED SOURCE WITH LIMITS
+.SUBCKT VCVS_LIMIT_1  VC+ VC- VOUT+ VOUT-
+*              
+.PARAM GAIN = 1
+.PARAM VPOS = 0
+.PARAM VNEG = 0
+*V1 VOUT+ VOUT- 1M
+E1 VOUT+ 1 VALUE={LIMIT(700M*V(VC+,VC-),(-1.076M*(TEMP)+0.75692),0)}
+E2 1 VOUT- VALUE={LIMIT(20.8M*V(VC+,VC-),0.7,0)}
+.ENDS VCVS_LIMIT_1 
+
+
+*INVERTER
+.SUBCKT INV_BASIC_GEN_SAN_0  IN Y PARAMS: VDD=1 VEE=0 VTH=0.5 
+E_ABM Y 0 VALUE = {((VDD+VEE)/2)-((VDD-VEE)/2)*TANH(10E12*(V(IN)-VTH))}
+.ENDS INV_BASIC_GEN_SAN_0 
+
+
+*TG IDEAL DIODE
+.SUBCKT IDEAL_D_0  A C
+D1 A C DNOM
+.MODEL DNOM D (IS=1N N=0.004  T_ABS=25)
+.ENDS IDEAL_D_0 
+
+
+***POSITIVE SUPPLY CURRENT***
+.SUBCKT PSUPP_DCC_0  IN1 IN2 O+ O- PARAMS: SP=1.6 TR1=2 TR2=3 TR3=6 TR4=7 EP=7.4
+*COORDINATES
+VT1 TR1N 0 2M
+R1 TR1N 0 1M
+VT2 TR2N 0 6.5M
+R2 TR2N 0 1M
+VT3 TR3N 0 12M
+R3 TR3N 0 1M
+VT4 TR4N 0 15M
+R4 TR4N 0 1M
+V1 SPN 0 -6M
+RV1 SPN 0 1M
+V2 EPN 0 30M
+RV2 EPN 0 1M
+
+*LINE EQUATIONS
+EL1 L1N 0 VALUE = {((V(TR1N)-V(SPN))/(TR1-SP))*(V(IN1,IN2)-SP) + V(SPN)}
+RL1 L1N 0 1M
+EL2 L2N 0 VALUE = {((V(TR2N)-V(TR1N))/(TR2-TR1))*(V(IN1,IN2)-TR1) + V(TR1N)}
+RL2 L2N 0 1M
+EL3 L3N 0 VALUE = {((V(TR3N)-V(TR2N))/(TR3-TR2))*(V(IN1,IN2)-TR2) + V(TR2N)}
+RL3 L3N 0 1M
+EL4 L4N 0 VALUE = {((V(TR4N)-V(TR3N))/(TR4-TR3))*(V(IN1,IN2)-TR3) + V(TR3N)}
+RL4 L4N 0 1M
+EL5 L5N 0 VALUE = {((V(EPN)-V(TR4N))/(EP-TR4))*(V(IN1,IN2)-TR4) + V(TR4N)}
+RL5 L5N 0 1M
+EL6 L6N 0 VALUE = {V(EPN)}
+RL6 L6N 0 1M
+EL0 L0N 0 VALUE = {V(SPN)}
+RL0 L0N 0 1M
+
+*WINDOW DEFINITIONS
+EW0 W0N 0 VALUE = {(0.5 - 0.5*TANH(1E12*(V(IN1,IN2) - SP)))}
+RW0 W0N 0 1M
+EW1 W1N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(V(IN1,IN2) - SP)))*(0.5 - 0.5*TANH(1E12*(V(IN1,IN2) - TR1)))}
+RW1 W1N 0 1M
+EW2 W2N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(V(IN1,IN2) - TR1)))*(0.5 - 0.5*TANH(1E12*(V(IN1,IN2) - TR2)))}
+RW2 W2N 0 1M
+EW3 W3N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(V(IN1,IN2) - TR2)))*(0.5 - 0.5*TANH(1E12*(V(IN1,IN2) - TR3)))}
+RW3 W3N 0 1M
+EW4 W4N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(V(IN1,IN2) - TR3)))*(0.5 - 0.5*TANH(1E12*(V(IN1,IN2) - TR4)))}
+RW4 W4N 0 1M
+EW5 W5N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(V(IN1,IN2) - TR4)))*(0.5 - 0.5*TANH(1E12*(V(IN1,IN2) - EP)))}
+RW5 W5N 0 1M
+EW6 W6N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(V(IN1,IN2) - EP)))}
+RW6 W6N 0 1M
+
+GOUT O+ O- VALUE = {(V(L0N)*V(W0N) + V(L1N)*V(W1N) + V(L2N)*V(W2N) + 
++V(L3N)*V(W3N) + V(L4N)*V(W4N) + V(L5N)*V(W5N) + V(L6N)*V(W6N))}
+ROUT O+ O- 1E15
+.ENDS
+
+
+*TWO INPUT AND GATE
+
+.SUBCKT AND2_BASIC_GEN_SAN_0  IN1 IN2 Y PARAMS: VDD=1 VEE=0 VTH=0.5
+
+E1 Y 0 VALUE ={(((VDD+VEE)/2)+ ((VDD-VEE)/2)*TANH((V(IN1,0)-VTH)*1E6))*
++(((VDD+VEE)/2)+ ((VDD-VEE)/2)*TANH((V(IN2,0)-VTH)*1E6))}
+
+.ENDS AND2_BASIC_GEN_SAN_0 
+
+
+
+*VOLTAGE CONTROLLED SOURCE WITH LIMITS
+.SUBCKT VCVS_LIMIT_2  VOUT+ VOUT-
+*              
+.PARAM GAIN = 1
+.PARAM VPOS = 2.5M
+.PARAM VNEG = -2.5M
+E1 VOUT+ VOUT- VALUE={LIMIT(((4.8U*TEMP)+586U),VPOS,VNEG)}
+.ENDS VCVS_LIMIT_2 
+
+
+***NEGATIVE SUPPLY CURRENT***
+*SP IS ATART POINT
+*EP IS END POINT 
+
+.SUBCKT NSUPP_DCC_0  O+ O-  PARAMS: SP=-50 TR1=-5 TR2=50 TR3=98  EP=125
+*COORDINATES
+V1 SPN 0 1.25
+RV1 SPN 0 1M
+V2 TR1N 0 1.35
+RV2 TR1N 0 1M
+V3 TR2N 0 1.8
+RV3 TR2N 0 1M
+V4 TR3N 0 1.8
+RV4 TR3N 0 1M
+V7 EPN 0 2.05
+RV7 EPN 0 1M
+
+*LINE EQUATIONS
+EL1 L1N 0 VALUE = {((V(TR1N)-V(SPN))/(TR1-SP))*(TEMP-SP) + V(SPN)}
+RL1 L1N 0 1M
+EL2 L2N 0 VALUE = {((V(TR2N)-V(TR1N))/(TR2-TR1))*(TEMP-TR1) + V(TR1N)}
+RL2 L2N 0 1M
+EL3 L3N 0 VALUE = {((V(TR3N)-V(TR2N))/(TR3-TR2))*(TEMP-TR2) + V(TR2N)}
+RL3 L3N 0 1M
+EL6 L6N 0 VALUE = {((V(EPN)-V(TR3N))/(EP-TR3))*(TEMP-TR3) + V(TR3N)}
+RL6 L6N 0 1M
+
+*WINDOW DEFINITIONS
+EW1 W1N 0 VALUE = {(0.5 - 0.5*TANH(1E12*(TEMP - TR1)))}
+RW1 W1N 0 1M
+EW2 W2N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(TEMP - TR1)))*(0.5 - 0.5*TANH(1E12*(TEMP - TR2)))}
+RW2 W2N 0 1M
+EW3 W3N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(TEMP - TR2)))*(0.5 - 0.5*TANH(1E12*(TEMP - TR3)))}
+RW3 W3N 0 1M
+EW6 W6N 0 VALUE = {(0.5 + 0.5*TANH(1E12*(TEMP - TR3)))}
+RW6 W6N 0 1M
+
+GOUT O+ O- VALUE = {(V(L1N)*V(W1N) + V(L2N)*V(W2N) + V(L3N)*V(W3N) + V(L6N)*V(W6N))*1M}
+ROUT O+ O- 1E15
+
+.ENDS
+
+
+*CURRENT SOURCE
+.SUBCKT CS_LIMIT_0  IOUT+ IOUT-     
+G1 IOUT+ IOUT- VALUE={15.43U*TEMP+.771M}
+
+.ENDS CS_LIMIT_0 
+
+
+*TWO INPUT OR GATE
+
+.SUBCKT OR2_BASIC_GEN_SAN_0  IN1 IN2 Y PARAMS: VDD=1 VEE=0 VTH=0.5
+
+E1 Y 0 VALUE ={(((VDD+VEE)/2)+ ((VDD-VEE)/2)*TANH((V(IN1,0)-VTH)*1E6)) + 
++(((VDD+VEE)/2)+((VDD-VEE)/2)*TANH((V(IN2,0)-VTH)*1E6))-((((VDD+VEE)/2)+ 
++((VDD-VEE)/2)*TANH((V(IN1,0)-VTH)*1E6)) * (((VDD+VEE)/2)+((VDD-VEE)/2)*TANH((V(IN2,0)-VTH)*1E6)))}
+
+.ENDS OR2_BASIC_GEN_SAN_0 
+
+*VOLTAGE CONTROLLED SOURCE WITH LIMITS
+.SUBCKT VCCS_LIMIT_1  VC+ VC- IOUT+ IOUT-
+*              
+.PARAM GAIN = 1U
+.PARAM IPOS = 1000
+.PARAM INEG = 0
+G1 IOUT+ IOUT- VALUE={LIMIT(1M*V(VC-,VC+),IPOS,INEG)}
+.ENDS VCCS_LIMIT_1

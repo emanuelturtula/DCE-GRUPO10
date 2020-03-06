@@ -1,0 +1,1046 @@
+Circuit: * C:\Users\Ema\Desktop\DCE\EFICIENCIA\Eficiencia_20k.asc
+
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vss}},{{vdd}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh)),((vss)),((vdd)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}&v(b)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))&v(b)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}&v(b)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))&v(b)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vss}},{{vdd}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh)),((vss)),((vdd)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}&v(b)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))&v(b)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vss}},{{vdd}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh)),((vss)),((vdd)))"
+WARNING: Less than two connections to node NC_03.  This node is used by V:U4:_V11.
+WARNING: Less than two connections to node NC_02.  This node is used by V:U4:_V12.
+WARNING: Less than two connections to node NC_01.  This node is used by V:U4:_V13.
+WARNING: Less than two connections to node NC_04.  This node is used by V:U4:_V14.
+WARNING: Less than two connections to node -15V.  This node is used by V6.
+Instance "m:u4:_m12:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u4:_m14:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u4:_m15:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u4:_m13:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:m2:2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:m2:1": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:m1:2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:m1:1": Length shorter than recommended for a level 3 MOSFET.
+Per .tran options, skipping operating point for transient analysis.
+Ignoring empty pin current: Ix(u4:vcci_1)
+.step vin=0.044
+Changing Tseed to 3.90625e-011
+Changing Tseed to 3.90625e-013
+Changing Tseed to 3.90625e-010
+Changing Tseed to 3.90625e-014
+Changing Tseed to 3.90625e-009
+Changing Tseed to 3.90625e-015
+Changing Tseed to 3.90625e-008
+Changing Tseed to 3.90625e-016
+Changing Tseed to 3.90625e-007
+Changing Tseed to 3.90625e-017
+Changing Tseed to 3.90625e-006
+Changing Tseed to 3.90625e-018
+Heightened Def Con from 0 Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+Changing Tseed to 1e-008
+Changing Tseed to 1e-012
+Changing Tseed to 1e-007
+Changing Tseed to 1e-013
+Changing Tseed to 1e-006
+Changing Tseed to 1e-014
+Changing Tseed to 1e-005
+Changing Tseed to 1e-015
+Changing Tseed to 0.0001
+Changing Tseed to 1e-016
++Changing Tseed to 1e-009
+Changing Tseed to 1e-011
+to 1.125e-011
+Heightened Def Con from 1.125e-011 +++++++++++++++++++++++++++to 2.26125e-009
+Heightened Def Con from 2.26125e-009 +++++++++++++++++++to 2.26394e-009
+Heightened Def Con from 2.26394e-009 +++++++++++++++to 2.26398e-009
+Heightened Def Con from 4.9982e-005 to 4.9983e-005
+Heightened Def Con from 5.24033e-005 to 5.24123e-005
+Heightened Def Con from 5.48531e-005 to 5.48532e-005
+Heightened Def Con from 5.97993e-005 to 5.97994e-005
+Heightened Def Con from 6.47328e-005 to 6.47329e-005
+Heightened Def Con from 6.71735e-005 to 6.71885e-005
+Heightened Def Con from 6.96537e-005 to 6.96538e-005
+Heightened Def Con from 7.21247e-005 to 7.21407e-005
+Heightened Def Con from 7.45671e-005 to 7.45672e-005
+Heightened Def Con from 7.94797e-005 to 7.94799e-005
+Heightened Def Con from 8.20289e-005 to 8.20389e-005
+Heightened Def Con from 8.43976e-005 to 8.43977e-005
+Heightened Def Con from 8.93286e-005 to 8.93287e-005
+Heightened Def Con from 9.42715e-005 to 9.42716e-005
+Heightened Def Con from 9.92231e-005 to 9.92232e-005
+Heightened Def Con from 0.000104175 to 0.000104175
+Heightened Def Con from 0.000106632 to 0.000106651
+Heightened Def Con from 0.000109122 to 0.000109122
+Heightened Def Con from 0.000111555 to 0.000111565
+Heightened Def Con from 0.000114057 to 0.000114058
+Heightened Def Con from 0.00011898 to 0.00011898
+Heightened Def Con from 0.000123894 to 0.000123894
+Heightened Def Con from 0.000128806 to 0.000128806
+Heightened Def Con from 0.000131349 to 0.000131349
+Heightened Def Con from 0.00013135 to 0.00013135
+Heightened Def Con from 0.000133724 to 0.000133724
+Heightened Def Con from 0.000133727 to 0.000133746
+Heightened Def Con from 0.000136295 to 0.000136295
+Heightened Def Con from 0.000136296 to 0.000136317
+Heightened Def Con from 0.000138652 to 0.000138673
+Heightened Def Con from 0.000141218 to 0.000141219
+Heightened Def Con from 0.00014122 to 0.00014124
+Heightened Def Con from 0.000143594 to 0.000143594
+Heightened Def Con from 0.000143594 to 0.000143615
+Heightened Def Con from 0.000146136 to 0.000146136
+Heightened Def Con from 0.000146137 to 0.000146158
+Heightened Def Con from 0.000148544 to 0.000148544
+Heightened Def Con from 0.000148545 to 0.000148566
+Heightened Def Con from 0.000151048 to 0.000151049
+Heightened Def Con from 0.000151049 to 0.000151071
+Heightened Def Con from 0.000153497 to 0.000153497
+Heightened Def Con from 0.000153497 to 0.00015352
+Heightened Def Con from 0.000155958 to 0.000155958
+Heightened Def Con from 0.000155959 to 0.000155979
+Heightened Def Con from 0.000158445 to 0.000158445
+Heightened Def Con from 0.000158446 to 0.000158446
+Heightened Def Con from 0.000160878 to 0.000160878
+Heightened Def Con from 0.000163382 to 0.000163382
+Heightened Def Con from 0.000165812 to 0.000165812
+Heightened Def Con from 0.000168306 to 0.000168306
+Heightened Def Con from 0.00017076 to 0.00017076
+Heightened Def Con from 0.000173221 to 0.000173221
+Heightened Def Con from 0.000175719 to 0.000175719
+Heightened Def Con from 0.000178133 to 0.000178133
+Heightened Def Con from 0.000178134 to 0.000178155
+Heightened Def Con from 0.000180673 to 0.000180673
+Heightened Def Con from 0.000180674 to 0.000180695
+Heightened Def Con from 0.000183049 to 0.000183049
+Heightened Def Con from 0.00018305 to 0.000183071
+Heightened Def Con from 0.000185619 to 0.00018562
+Heightened Def Con from 0.00018562 to 0.000185641
+Heightened Def Con from 0.000187976 to 0.000187976
+Heightened Def Con from 0.000187977 to 0.000187998
+Heightened Def Con from 0.000190548 to 0.000190548
+Heightened Def Con from 0.000192916 to 0.000192916
+Heightened Def Con from 0.000192917 to 0.000192938
+Heightened Def Con from 0.00019546 to 0.00019546
+Heightened Def Con from 0.000195461 to 0.000195482
+Heightened Def Con from 0.000197865 to 0.000197865
+Heightened Def Con from 0.000197866 to 0.000197887
+Heightened Def Con from 0.00020037 to 0.00020037
+Heightened Def Con from 0.000200371 to 0.000200392
+Heightened Def Con from 0.000202818 to 0.000202818
+Heightened Def Con from 0.000202818 to 0.00020284
+Heightened Def Con from 0.000205283 to 0.000205283
+Heightened Def Con from 0.000207767 to 0.000207767
+Heightened Def Con from 0.000207767 to 0.000207768
+Heightened Def Con from 0.000210204 to 0.000210204
+Heightened Def Con from 0.000212706 to 0.000212706
+Heightened Def Con from 0.000212707 to 0.000212707
+Heightened Def Con from 0.00021513 to 0.000215131
+Heightened Def Con from 0.000217632 to 0.000217632
+Heightened Def Con from 0.000217632 to 0.000217632
+Heightened Def Con from 0.000220079 to 0.00022008
+Heightened Def Con from 0.000220081 to 0.000220101
+Heightened Def Con from 0.000222548 to 0.000222548
+Heightened Def Con from 0.000225033 to 0.000225033
+Heightened Def Con from 0.000225034 to 0.000225055
+Heightened Def Con from 0.000227459 to 0.000227459
+Heightened Def Con from 0.00022746 to 0.000227481
+Heightened Def Con from 0.000229991 to 0.000229991
+Heightened Def Con from 0.000229992 to 0.000230013
+Heightened Def Con from 0.000232375 to 0.000232375
+Heightened Def Con from 0.000232376 to 0.000232397
+Heightened Def Con from 0.00023494 to 0.00023494
+Heightened Def Con from 0.000234941 to 0.000234962
+Heightened Def Con from 0.000237299 to 0.000237299
+Heightened Def Con from 0.000239872 to 0.000239873
+Heightened Def Con from 0.000242237 to 0.000242237
+Heightened Def Con from 0.000242238 to 0.000242259
+Heightened Def Con from 0.000244786 to 0.000244786
+Heightened Def Con from 0.000247186 to 0.000247186
+Heightened Def Con from 0.000247187 to 0.000247208
+Heightened Def Con from 0.000249702 to 0.000249702
+Heightened Def Con from 0.000249703 to 0.000249724
+Heightened Def Con from 0.000252139 to 0.000252139
+Heightened Def Con from 0.000254608 to 0.000254609
+Heightened Def Con from 0.00025709 to 0.00025709
+Heightened Def Con from 0.000259527 to 0.000259527
+Heightened Def Con from 0.000259529 to 0.000259549
+Heightened Def Con from 0.000262028 to 0.000262029
+Heightened Def Con from 0.000262029 to 0.000262029
+Heightened Def Con from 0.000264457 to 0.000264457
+Heightened Def Con from 0.000264459 to 0.000264479
+Heightened Def Con from 0.000266957 to 0.000266957
+Heightened Def Con from 0.000269402 to 0.000269402
+Heightened Def Con from 0.000269403 to 0.000269423
+Heightened Def Con from 0.000271874 to 0.000271874
+Heightened Def Con from 0.000271874 to 0.000271874
+Heightened Def Con from 0.000274354 to 0.000274354
+Heightened Def Con from 0.000274355 to 0.000274375
+Heightened Def Con from 0.000276786 to 0.000276786
+Heightened Def Con from 0.000276786 to 0.000276808
+Heightened Def Con from 0.000279315 to 0.000279315
+Heightened Def Con from 0.0002817 to 0.000281701
+Heightened Def Con from 0.000281701 to 0.000281722
+Heightened Def Con from 0.000284259 to 0.00028426
+Heightened Def Con from 0.000286623 to 0.000286623
+Heightened Def Con from 0.000289195 to 0.000289195
+Heightened Def Con from 0.000289195 to 0.000289217
+Heightened Def Con from 0.00029156 to 0.00029156
+Heightened Def Con from 0.000291561 to 0.000291582
+Heightened Def Con from 0.000294112 to 0.000294112
+Heightened Def Con from 0.000294113 to 0.000294134
+Heightened Def Con from 0.000296508 to 0.000296508
+Heightened Def Con from 0.000299027 to 0.000299027
+Heightened Def Con from 0.000299028 to 0.000299049
+Heightened Def Con from 0.000301461 to 0.000301461
+Heightened Def Con from 0.000301461 to 0.000301482
+Heightened Def Con from 0.000303932 to 0.000303932
+Heightened Def Con from 0.000306412 to 0.000306412
+Heightened Def Con from 0.000306412 to 0.000306412
+Heightened Def Con from 0.000308848 to 0.000308848
+Heightened Def Con from 0.00030885 to 0.00030887
+Heightened Def Con from 0.000311354 to 0.000311354
+Heightened Def Con from 0.000313777 to 0.000313777
+Heightened Def Con from 0.000316282 to 0.000316282
+Heightened Def Con from 0.000316283 to 0.000316283
+Heightened Def Con from 0.00031872 to 0.00031872
+Heightened Def Con from 0.000318722 to 0.000318742
+Heightened Def Con from 0.0003212 to 0.0003212
+Heightened Def Con from 0.000323674 to 0.000323674
+Heightened Def Con from 0.000326113 to 0.000326113
+Heightened Def Con from 0.000326113 to 0.000326135
+Heightened Def Con from 0.000328632 to 0.000328632
+Heightened Def Con from 0.000328633 to 0.000328654
+Heightened Def Con from 0.000331026 to 0.000331026
+Heightened Def Con from 0.000333584 to 0.000333584
+Heightened Def Con from 0.000335949 to 0.000335949
+Heightened Def Con from 0.00033595 to 0.000335971
+Heightened Def Con from 0.000338518 to 0.000338518
+Heightened Def Con from 0.000338518 to 0.00033854
+Heightened Def Con from 0.000340883 to 0.000340883
+Heightened Def Con from 0.000340884 to 0.000340905
+Heightened Def Con from 0.000343442 to 0.000343442
+Heightened Def Con from 0.000343443 to 0.000343464
+Heightened Def Con from 0.00034583 to 0.00034583
+Heightened Def Con from 0.000345831 to 0.000345852
+Heightened Def Con from 0.000348356 to 0.000348356
+Heightened Def Con from 0.000348356 to 0.000348377
+Heightened Def Con from 0.000350783 to 0.000350783
+Heightened Def Con from 0.000350783 to 0.000350804
+Heightened Def Con from 0.000353265 to 0.000353266
+Heightened Def Con from 0.000355734 to 0.000355734
+Heightened Def Con from 0.000358173 to 0.000358173
+Heightened Def Con from 0.000360677 to 0.000360677
+Heightened Def Con from 0.000360678 to 0.000360678
+Heightened Def Con from 0.000363106 to 0.000363106
+Heightened Def Con from 0.000365609 to 0.000365609
+Heightened Def Con from 0.000365609 to 0.000365609
+Heightened Def Con from 0.000368043 to 0.000368043
+Heightened Def Con from 0.000368045 to 0.000368065
+Heightened Def Con from 0.000370528 to 0.000370528
+Heightened Def Con from 0.000370528 to 0.000370528
+Heightened Def Con from 0.000373001 to 0.000373002
+Heightened Def Con from 0.00037544 to 0.00037544
+Heightened Def Con from 0.00037544 to 0.000375462
+Heightened Def Con from 0.000377954 to 0.000377954
+Heightened Def Con from 0.000380353 to 0.000380353
+Heightened Def Con from 0.000380353 to 0.000380374
+Heightened Def Con from 0.000382903 to 0.000382903
+Heightened Def Con from 0.000382903 to 0.000382924
+Heightened Def Con from 0.000385274 to 0.000385274
+Heightened Def Con from 0.000385275 to 0.000385296
+Heightened Def Con from 0.000387841 to 0.000387841
+Heightened Def Con from 0.000387841 to 0.000387862
+Heightened Def Con from 0.000390206 to 0.000390207
+Heightened Def Con from 0.000390208 to 0.000390229
+Heightened Def Con from 0.000392769 to 0.000392769
+Heightened Def Con from 0.000392769 to 0.000392791
+Heightened Def Con from 0.000395151 to 0.000395151
+Heightened Def Con from 0.000395152 to 0.000395173
+Heightened Def Con from 0.000397683 to 0.000397683
+Heightened Def Con from 0.000397683 to 0.000397704
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.412497
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	8.886e-01	1.000e+00	  -32.65°	    0.00°
+    2   	4.000e+04	3.367e-02	3.789e-02	 -101.31°	  -68.66°
+    3   	6.000e+04	3.130e-02	3.523e-02	  -45.77°	  -13.12°
+Total Harmonic Distortion: 5.173758%(267.926672%)
+
+
+.step vin=0.063
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.398051
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	1.260e+00	1.000e+00	  -33.39°	    0.00°
+    2   	4.000e+04	3.337e-02	2.648e-02	  -73.07°	  -39.67°
+    3   	6.000e+04	1.332e-02	1.057e-02	  -47.98°	  -14.58°
+Total Harmonic Distortion: 2.850746%(188.763920%)
+
+.step vin=0.077
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.401632
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	1.547e+00	1.000e+00	  -32.33°	    0.00°
+    2   	4.000e+04	3.271e-02	2.114e-02	  -35.90°	   -3.57°
+    3   	6.000e+04	9.453e-03	6.109e-03	  -60.54°	  -28.20°
+Total Harmonic Distortion: 2.200325%(153.593846%)
+
+.step vin=0.1
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.403457
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	1.998e+00	1.000e+00	  -32.31°	    0.00°
+    2   	4.000e+04	3.233e-02	1.618e-02	  -49.89°	  -17.58°
+    3   	6.000e+04	2.918e-02	1.460e-02	  -74.72°	  -42.41°
+Total Harmonic Distortion: 2.179441%(118.852527%)
+
+.step vin=0.12
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.411796
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	2.406e+00	1.000e+00	  -32.12°	    0.00°
+    2   	4.000e+04	2.659e-02	1.105e-02	  -71.93°	  -39.81°
+    3   	6.000e+04	4.496e-02	1.868e-02	  -42.06°	   -9.94°
+Total Harmonic Distortion: 2.170537%(98.597560%)
+
+.step vin=0.126
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.411312
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	2.547e+00	1.000e+00	  -32.08°	    0.00°
+    2   	4.000e+04	1.642e-02	6.446e-03	  -77.78°	  -45.70°
+    3   	6.000e+04	2.034e-02	7.984e-03	  -25.03°	    7.05°
+Total Harmonic Distortion: 1.026125%(93.131486%)
+
+.step vin=0.134
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.399864
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	2.703e+00	1.000e+00	  -32.52°	    0.00°
+    2   	4.000e+04	2.889e-02	1.069e-02	 -109.28°	  -76.76°
+    3   	6.000e+04	3.289e-02	1.217e-02	  -25.67°	    6.85°
+Total Harmonic Distortion: 1.620070%(87.738089%)
+
+.step vin=0.141
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.41189
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	2.837e+00	1.000e+00	  -32.01°	    0.00°
+    2   	4.000e+04	1.720e-02	6.062e-03	  -41.97°	   -9.97°
+    3   	6.000e+04	2.208e-02	7.782e-03	  -24.53°	    7.48°
+Total Harmonic Distortion: 0.986431%(83.502375%)
+
+.step vin=0.148
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.396693
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	2.969e+00	1.000e+00	  -32.35°	    0.00°
+    2   	4.000e+04	1.620e-02	5.456e-03	 -121.29°	  -88.94°
+    3   	6.000e+04	2.239e-02	7.542e-03	  -45.41°	  -13.06°
+Total Harmonic Distortion: 0.930820%(79.794625%)
+
+.step vin=0.155
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.403437
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	3.122e+00	1.000e+00	  -32.26°	    0.00°
+    2   	4.000e+04	1.378e-02	4.414e-03	  -50.30°	  -18.04°
+    3   	6.000e+04	4.254e-02	1.362e-02	  -24.53°	    7.73°
+Total Harmonic Distortion: 1.432183%(75.867613%)
+
+.step vin=0.161
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.394167
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	3.215e+00	1.000e+00	  -32.39°	    0.00°
+    2   	4.000e+04	1.268e-02	3.945e-03	   11.69°	   44.08°
+    3   	6.000e+04	2.243e-02	6.977e-03	  -59.96°	  -27.58°
+Total Harmonic Distortion: 0.801549%(73.564723%)
+
+.step vin=0.167
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.405832
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	3.355e+00	1.000e+00	  -32.42°	    0.00°
+    2   	4.000e+04	2.875e-02	8.569e-03	  -41.23°	   -8.81°
+    3   	6.000e+04	2.539e-02	7.566e-03	  -56.16°	  -23.74°
+Total Harmonic Distortion: 1.143101%(70.458700%)
+
+.step vin=0.173
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.405194
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	3.467e+00	1.000e+00	  -32.41°	    0.00°
+    2   	4.000e+04	2.008e-02	5.791e-03	  -65.16°	  -32.75°
+    3   	6.000e+04	3.542e-02	1.022e-02	   -9.97°	   22.44°
+Total Harmonic Distortion: 1.174285%(68.210760%)
+
+.step vin=0.179
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.393688
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	3.582e+00	1.000e+00	  -32.44°	    0.00°
+    2   	4.000e+04	3.245e-02	9.061e-03	  -60.65°	  -28.21°
+    3   	6.000e+04	2.206e-02	6.158e-03	  -64.02°	  -31.58°
+Total Harmonic Distortion: 1.095568%(65.916813%)
+
+.step vin=0.184
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.402499
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	3.682e+00	1.000e+00	  -32.19°	    0.00°
+    2   	4.000e+04	2.694e-02	7.315e-03	  -68.25°	  -36.06°
+    3   	6.000e+04	2.241e-02	6.086e-03	  -39.68°	   -7.49°
+Total Harmonic Distortion: 0.951588%(64.082326%)
+
+.step vin=0.2
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.391828
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	3.999e+00	1.000e+00	  -32.26°	    0.00°
+    2   	4.000e+04	1.980e-02	4.950e-03	  -49.89°	  -17.63°
+    3   	6.000e+04	1.606e-02	4.017e-03	  -64.28°	  -32.02°
+Total Harmonic Distortion: 0.637437%(58.949736%)
+
+.step vin=0.5
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.394606
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	9.914e+00	1.000e+00	  -32.01°	    0.00°
+    2   	4.000e+04	1.160e-02	1.170e-03	  -33.64°	   -1.63°
+    3   	6.000e+04	2.767e-02	2.791e-03	  -36.86°	   -4.86°
+Total Harmonic Distortion: 0.302673%(22.556472%)
+
+.step vin=0.7
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.406187
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	1.392e+01	1.000e+00	  -32.07°	    0.00°
+    2   	4.000e+04	2.283e-02	1.641e-03	  -70.16°	  -38.08°
+    3   	6.000e+04	4.053e-02	2.913e-03	  -14.49°	   17.58°
+Total Harmonic Distortion: 0.334311%(15.123968%)
+
+.step vin=0.8
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.392989
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	1.594e+01	1.000e+00	  -32.04°	    0.00°
+    2   	4.000e+04	3.063e-02	1.921e-03	  -69.67°	  -37.63°
+    3   	6.000e+04	5.499e-02	3.449e-03	   -2.07°	   29.97°
+Total Harmonic Distortion: 0.394784%(12.716242%)
+
+.step vin=0.9
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.41018
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	1.796e+01	1.000e+00	  -32.05°	    0.00°
+    2   	4.000e+04	3.816e-02	2.124e-03	  -49.68°	  -17.63°
+    3   	6.000e+04	5.032e-02	2.801e-03	   -4.57°	   27.48°
+Total Harmonic Distortion: 0.351580%(10.826923%)
+
+.step vin=1
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.399751
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	1.997e+01	1.000e+00	  -32.11°	    0.00°
+    2   	4.000e+04	4.110e-02	2.058e-03	  -45.29°	  -13.18°
+    3   	6.000e+04	6.046e-02	3.027e-03	    8.58°	   40.69°
+Total Harmonic Distortion: 0.366084%(9.323600%)
+
+.step vin=1.1
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.403657
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	2.200e+01	1.000e+00	  -32.07°	    0.00°
+    2   	4.000e+04	5.172e-02	2.351e-03	  -74.31°	  -42.24°
+    3   	6.000e+04	4.552e-02	2.070e-03	  -18.32°	   13.75°
+Total Harmonic Distortion: 0.313248%(8.075655%)
+
+.step vin=1.41
+N-Period=1
+Fourier components of V(vo)
+DC component:-0.405522
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	2.000e+04	2.830e+01	1.000e+00	  -32.15°	    0.00°
+    2   	4.000e+04	5.106e-02	1.804e-03	  -56.91°	  -24.76°
+    3   	6.000e+04	8.764e-02	3.096e-03	   25.97°	   58.13°
+Total Harmonic Distortion: 0.358373%(5.520736%)
+
+
+
+Measurement: pin
+  step	AVG(-v(vcc)*i(vcc)+v(vee)*i(vss))	FROM	TO
+     1	0.73952	0	0.0002
+     2	0.784263	0	0.0002
+     3	0.833709	0	0.0002
+     4	0.930557	0	0.0002
+     5	1.03818	0	0.0002
+     6	1.07364	0	0.0002
+     7	1.12498	0	0.0002
+     8	1.17079	0	0.0002
+     9	1.21941	0	0.0002
+    10	1.2747	0	0.0002
+    11	1.31331	0	0.0002
+    12	1.36539	0	0.0002
+    13	1.41388	0	0.0002
+    14	1.46763	0	0.0002
+    15	1.5117	0	0.0002
+    16	1.65947	0	0.0002
+    17	6.79684	0	0.0002
+    18	12.8439	0	0.0002
+    19	16.6741	0	0.0002
+    20	21.0355	0	0.0002
+    21	25.8865	0	0.0002
+    22	31.2862	0	0.0002
+    23	51.5724	0	0.0002
+
+Measurement: pout
+  step	AVG(v(vo)*i(rl))	FROM	TO
+     1	0.431263	0	0.0002
+     2	0.4802	0	0.0002
+     3	0.530904	0	0.0002
+     4	0.632514	0	0.0002
+     5	0.743404	0	0.0002
+     6	0.780166	0	0.0002
+     7	0.832913	0	0.0002
+     8	0.87918	0	0.0002
+     9	0.929279	0	0.0002
+    10	0.986389	0	0.0002
+    11	1.02479	0	0.0002
+    12	1.07854	0	0.0002
+    13	1.12791	0	0.0002
+    14	1.18335	0	0.0002
+    15	1.22663	0	0.0002
+    16	1.37912	0	0.0002
+    17	6.47767	0	0.0002
+    18	12.4171	0	0.0002
+    19	16.1672	0	0.0002
+    20	20.4366	0	0.0002
+    21	25.1799	0	0.0002
+    22	30.46	0	0.0002
+    23	50.3017	0	0.0002
+
+Measurement: eff
+  step	pout/pin
+     1	0.583166
+     2	0.612295
+     3	0.636797
+     4	0.679716
+     5	0.716065
+     6	0.726657
+     7	0.740383
+     8	0.75093
+     9	0.762073
+    10	0.773821
+    11	0.780312
+    12	0.789913
+    13	0.797739
+    14	0.806301
+    15	0.811426
+    16	0.83106
+    17	0.953042
+    18	0.966771
+    19	0.969598
+    20	0.971532
+    21	0.972703
+    22	0.973592
+    23	0.975362
+
+
+Date: Wed Mar 04 20:48:59 2020
+Total elapsed time: 2146.846 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 986668
+traniter = 986668
+tranpoints = 296508
+accept = 219810
+rejected = 76581
+matrix size = 370
+fillins = 561
+Thread vector: 71.6/40.8[5] 18.3/12.3[5] 13.4/5.5[5] 4.3/3.4[3]  2592/500
+Matrix Compiler1: 64.56 KB object code size  22.8/15.4/[5.3]
+Matrix Compiler2: 42.67 KB object code size  10.4/12.3/[3.5]
+

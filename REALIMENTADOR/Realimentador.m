@@ -89,7 +89,7 @@ alpha = double(solve(eqn, alpha));
 
 eqn = 1/tau/sqrt(alpha) == wmax;
 tau = double(solve(eqn, tau));
-Kgc = 1/alpha;
+Kgc = 1/alpha/10;
 
 Gc = Kgc*(1+s*alpha*tau)/(1+s*tau);
 [mag_Gc, fase_Gc] = bode(Gc, w);

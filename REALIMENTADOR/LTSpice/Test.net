@@ -1,0 +1,24 @@
+* C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\LTSpice\Test.asc
+VCC VCC 0 30
+VSS 0 VEE 30
+V1 5V 0 5
+V§SENOIDAL Vsin 0 SINE(0 1.1 20k)
+V2 0 -5V 5
+V5 15V 0 15
+V6 0 -15V 15
+.tran 0 400u 0 uic
+.include UCC20520.301
+* Fuentes
+* Bibliotecas
+.include PHB27NQ10T.lib
+.include BS170.301
+.include LM311.301
+.include TL082.301
+* Directivas SPICE
+* Entrada
+.options numdgt = 15
+* Doble precision
+.options plotwinsize = 0
+* Deshabilitar la compresion
+.backanno
+.end

@@ -24,33 +24,29 @@ a = 20*Filtro;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Restador con ganancia = 100
-K_error = 10*p_tl082;              
+K_error = 82*p_tl082;              
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Realimentador (son 2 etapas):
+% Realimentador:
 
-%Etapa 1: bajar la tension de salida por un factor de 20. Requiere un
+%Etapa 1: bajar la tension de salida por un factor de 30. Requiere un
 %operacional
 
-feed_et(1) = 1/20*p_tl082;
+feed = 1/20*p_tl082;
 
-%Etapa 2: compensar (con compensador para componentes NO comerciales).
-%Requiere un operacional.
+%Compensador
 grados = 45;
 phi = 2*pi*grados/360;
 freq_max = 5E5;
 
 alpha = (sin(phi)+1)/(1-sin(phi));
 tau = 1/(freq_max*2*pi*sqrt(alpha));
-%feed_et(2) = (s*alpha*tau+1)/(s*tau+1)*p_tl082;
-%Importante!! Es una red de adelanto pasiva + un operacional no inversor
-%para eliminar la atenuacion de la red de adelanto. (No se si es necesario 
-%igual).
-feed_et(2) = 1/alpha*(s*alpha*tau+1)/(s*tau+1)*p_tl082;
+
+comp = 1/alpha*(s*alpha*tau+1)/(s*tau+1);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Ganancia de lazo
-af(1) = K_error*a*feed_et(1); %Sin compensar
-af(2) = af(1)*feed_et(2);
+af(1) = K_error*a*feed; %Sin compensar
+af(2) = af(1)*comp; %Con compensador
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % GRAFICO
@@ -67,45 +63,27 @@ title({txt1, txt2}, 'Fontsize', 12);
 figure                                            
 [Gm, Pm, Fcg, Fcp] = plot_bode(af(2));
 hold on
-plot_bode(feed_et(2));
+plot_bode(comp);
 grid minor
 txt1 = sprintf('Margen de ganancia = %.2f  (%.1i Hz)', Gm, Fcg);
 txt2 = sprintf('Margen de fase = %.2f ^{\\circ} (%.1i Hz)', Pm, Fcp);
 title({txt1, txt2}, 'Fontsize', 12);
 
 
-% Ahora con red de adelanto para componentes comerciales
-R1 = 22E3;
-R2 = 1.2E3;
 
-R3 = 15E3;
-R4 = 3.3E3;
-C1 = 47E-12;
-
-alpha_R = (R3+R4)/R4;
-tau_R = (R3*R4)/(R3+R4)*C1;
-
-R5 = 1E3;
-R6 = 4.7E3;
-
-feed_et_real(1) = R2/(R1+R2)*p_tl082;
-feed_et_real(2) = 1/alpha_R*(s*alpha_R*tau_R+1)/(s*tau_R+1)*p_tl082;
-
-af_Real(1) = K_error*a*feed_et_real(1);
-af_Real(2) = af_Real(1)*feed_et_real(2);
-
-figure                                            
-[Gm, Pm, Fcg, Fcp] = plot_bode(af_Real(2));
-hold on
-plot_bode(feed_et_real(2));
-grid minor
-txt1 = sprintf('Margen de ganancia = %.2f  (%.1i Hz)', Gm, Fcg);
-txt2 = sprintf('Margen de fase = %.2f ^{\\circ} (%.1i Hz)', Pm, Fcp);
-txt3 = "Real";
-title({txt1, txt2, txt3}, 'Fontsize', 12);
 
 return
+%%
+syms R1 R2 C;
+eqn1 = alpha == (R1+R2)/R2;
+eqn2 = tau == R1/alpha*C;
+eqn3 = C == 100E-12;
 
+sol = solve([eqn1, eqn2, eqn3], [R1 R2 C]);
+
+vpa(sol.R1)
+vpa(sol.R2)
+vpa(sol.C)
 
 
 %% SIMULINK

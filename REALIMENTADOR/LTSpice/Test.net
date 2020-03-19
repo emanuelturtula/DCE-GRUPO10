@@ -1,0 +1,47 @@
+* C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\LTSpice\Test.asc
+Lf N005 Vo 33µ
+Cf Vo 0 300n
+RL Vo 0 8
+VCC VCC 0 30
+VSS 0 VEE 30
+V1 5V 0 5
+V§SENOIDAL Vsin 0 SINE(0 1.1 20k)
+V2 0 -5V 5
+V5 15V 0 15
+V6 0 -15V 15
+S1 N005 VCC N001 0 SW
+S2 N005 VEE 5V N001 SW
+V§TRIANGULAR Vtriang 0 PULSE(-1.5 1.5 0 2.5u 2.5u 0 5u)
+B1 N001 0 V{ if( V(error) > V(Vtriang), 5, 0) }
+R1 Vo Vf 22k
+R2 Vf 0 1.2k
+XU1 N004 N002 15V -15V N003 LM318
+R5 N004 Vsin 1k
+R6 0 N004 {R}
+R7 Vf N002 1k
+R8 N003 N002 {R}
+C1 error N003 100p
+R3 error N003 9.1k
+R4 0 error 1.8k
+.tran 0 500u 0 uic
+.include UCC20520.301
+* Fuentes
+* Bibliotecas
+* Salida
+* Filtro
+.include PHB27NQ10T.lib
+.include BS170.301
+.include LM311.301
+.include LM318.301
+* Directivas SPICE
+* Entrada
+* Etapa de salida
+.options numdgt = 15
+* Doble precision
+.options plotwinsize = 0
+* Deshabilitar la compresion
+.four 20k 3 -1 V(vo)
+.model SW SW(Ron=.01 Roff=10Meg Vt=1)
+.Param R=100k
+.backanno
+.end

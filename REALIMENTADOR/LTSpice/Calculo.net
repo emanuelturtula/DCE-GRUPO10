@@ -1,54 +1,33 @@
 * C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\LTSpice\Calculo.asc
 V1 5V 0 5
 V2 0 -5V 5
-XU1 N001 N003 15V -15V error AD817
-R1 N001 0 1k
-R2 0 N001 {R}
-R3 error N003 {R}
-R4 Vf N003 1k
-Lf1 N002 vo 33µ
+XU1 0 N002 15V -15V error AD817
+R1 0 0 1k
+Rf Vf N001 190k
+Lf1 Vs vo 33µ
 Cf1 vo 0 330n
 R5 vo 0 8
-R6 Vf vin 19k
-R7 0 Vf 1k
-C1 Vf vin 82p
-R10 comp error 10k
-C3 comp error 100p
-R11 comp 0 1k
 V8 15V 0 15
 V9 0 -15V 15
 V10 VCC 0 30
 V11 0 VEE 30
-V4 vin 0 AC 1
-B1 N002 0 V=delay(V(comp), 300n)*20
-V3 N010 0 AC 1
-R8 t_f N010 19k
-R9 0 t_f 1k
-C2 t_f N010 82p
-R12 t_comp N004 10k
-C4 t_comp N004 100p
-R13 t_comp 0 1k
-V5 N004 0 AC 1
-XU2 N007 N009 15V -15V t_error AD817
-R14 N007 N006 1k
-R15 0 N007 1Meg
-R16 t_error N009 1Meg
-R17 0 N009 1k
-V6 N006 0 AC 1
-Lf2 N008 t_vo 33µ
-Cf2 t_vo 0 330n
-V7 N008 0 AC 20
-R18 t_vo 0 8
-R21 t_comp2 N005 10k
-C6 t_comp2 N005 100p
-R22 t_comp2 0 8.2k
-V12 N005 0 AC 1
+V4 Vf 0 AC 1
+B1 Vs 0 V=20*delay(V(error), 120n)
+C1 NC_01 N002 {C}
+R2 0 0 {R}
+C2 NC_02 0 {C}
+R4 error N002 {R}
+R3 N002 N001 1k
+R6 N001 0 10k
 .ac dec 10000 0.1 10Meg
 .include AD817.301
-.param R=470k
+.param R=47k
 .include LM311.301
 .options plotwinsize = 0
 .options numdgt = 15
 .model SW SW(Ron=.01 Roff=10Meg Vt=1)
+.param C=6.8p
+.step dec param R 1k 10Meg 1
+.meas Gain FIND mag(-V(Vs)/V(Vf)) AT 1k
 .backanno
 .end

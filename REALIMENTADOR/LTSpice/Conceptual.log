@@ -318,33 +318,34 @@ Changing Tseed to 1e-11
 Changing Tseed to 1e-08
 Changing Tseed to 1e-12
 to 1.125e-12
+Heightened Def Con from 1.125e-12 ++++++++++++++++++++to 1.12612e-09
 N-Period=all
 Fourier components of V(vo)
-DC component:0.069146
+DC component:-1.5138
 
 Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
  Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
-    1   	 2.000e+4	 1.552e+1	 1.000e+0	  -14.34°	    0.00°
-    2   	 4.000e+4	 1.969e-1	 1.268e-2	   45.72°	   60.05°
-    3   	 6.000e+4	 8.079e-1	 5.204e-2	  -26.78°	  -12.45°
-Total Harmonic Distortion: 5.356339%(11.650611%)
+    1   	 2.000e+4	 3.772e+1	 1.000e+0	   89.16°	    0.00°
+    2   	 4.000e+4	 1.642e+0	 4.353e-2	  129.24°	   40.07°
+    3   	 6.000e+4	 7.324e+0	 1.942e-1	 -114.76°	 -203.93°
+Total Harmonic Distortion: 19.901256%(31.545384%)
 
 
 
-Date: Mon Mar 30 00:21:54 2020
-Total elapsed time: 2.748 seconds.
+Date: Tue Mar 31 12:29:39 2020
+Total elapsed time: 0.489 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 185467
-traniter = 185467
-tranpoints = 39747
-accept = 28612
-rejected = 10845
-matrix size = 70
-fillins = 51
+totiter = 28347
+traniter = 28347
+tranpoints = 7244
+accept = 5037
+rejected = 1938
+matrix size = 67
+fillins = 46
 solver = Alternate
-Matrix Compiler1: 7.22 KB object code size  1.1/0.9/[0.5]
-Matrix Compiler2: 7.21 KB object code size  0.6/0.8/[0.4]
+Matrix Compiler1: 6.50 KB object code size  1.1/0.8/[0.4]
+Matrix Compiler2: 6.80 KB object code size  0.6/0.8/[0.4]
 

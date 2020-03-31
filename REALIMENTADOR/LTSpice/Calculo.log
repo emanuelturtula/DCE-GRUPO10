@@ -1,25 +1,46 @@
 Circuit: * C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\LTSpice\Calculo.asc
 
+R1: both pins shorted together -- ignoring.
+R2: both pins shorted together -- ignoring.
 Number of points per decade reduced from 10000 to 7726.
+WARNING: Node NC_01 is floating.
+WARNING: Node NC_02 is floating.
+
 WARNING: Less than two connections to node 5V.  This node is used by V1.
 WARNING: Less than two connections to node -5V.  This node is used by V2.
 WARNING: Less than two connections to node VCC.  This node is used by V10.
 WARNING: Less than two connections to node VEE.  This node is used by V11.
+WARNING: Less than two connections to node NC_01.  This node is used by C1.
+WARNING: Less than two connections to node NC_02.  This node is used by C2.
 Direct Newton iteration for .op point succeeded.
+.step r=1000
+.step r=10000
+.step r=100000
+.step r=1e+06
+.step r=1e+07
 
-Date: Mon Mar 30 00:24:27 2020
-Total elapsed time: 1.307 seconds.
+
+Measurement: gain
+  step	mag(-v(vs)/v(vf))	at
+     1	(-20.4257dB,0°)	1000
+     2	(-0.427252dB,0°)	1000
+     3	(19.5573dB,0°)	1000
+     4	(39.4047dB,0°)	1000
+     5	(3.22679dB,0°)	1000
+
+
+Date: Tue Mar 31 14:25:33 2020
+Total elapsed time: 3.186 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 26
+totiter = 27
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 111
-fillins = 67
-solver = Alternate
-Matrix Compiler1:     493 opcodes
-Matrix Compiler2: 10.95 KB object code size
+matrix size = 58
+fillins = 30
+Matrix Compiler1:     233 opcodes
+Matrix Compiler2: 5.38 KB object code size

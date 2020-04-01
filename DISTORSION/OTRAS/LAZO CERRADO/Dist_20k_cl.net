@@ -1,0 +1,102 @@
+* C:\Users\emanu\Desktop\DCE-GRUPO10\DISTORSION\OTRAS\LAZO CERRADO\Dist_20k_cl.asc
+RL Vo 0 8
+VCC VCC 0 30
+VSS 0 VEE 30
+V1 5V 0 5
+V§SENOIDAL Vsin 0 SINE(0 {vin} {freq})
+V2 0 -5V 5
+V5 15V 0 15
+V6 0 -15V 15
+R17 N003 N002 18k
+R18 0 N002 1k
+XU8 N010 N005 15V -15V error AD817
+R19 N005 N001 1k
+R20 N010 Vsin 1k
+R21 0 N010 {R}
+R22 N005 error {R}
+R23 N004 N003 1k
+R16 N012 N011 10
+D1 N012 N009 MURS120
+C3 N009 N004 1µ
+XM1 VCC N007 N004 PHB27NQ10T
+XM2 N004 N014 VEE PHB27NQ10T
+C5 N011 VEE 10µ
+Lf1 N004 Vo 33µ
+Cf1 Vo 0 300n
+XU4 0 DT 0 NC_01 NC_02 NC_03 NC_04 HO LO PWM-In 5V 5V N009 N011 N004 VEE UCC20520 UCC20520
+V3 N011 VEE 12
+C6 DT 0 2.2n
+R25 DT 0 2.2k
+R27 PWM-In N008 51
+C7 PWM-In 0 33p
+C8 5V 0 1µ
+C9 N009 N004 100n
+C10 N011 VEE 220n
+C11 N011 VEE 10µ
+R28 N014 LO 3.3
+R29 N007 HO 3.3
+D2 N014 N013 MURS320
+R30 N013 LO 1.2
+R31 N006 HO 1.2
+D3 N007 N006 MURS320
+C13 N014 VEE 1n
+C14 N007 N004 1n
+XU6 error Vtriang 15V -15V N008 0 LM311
+R32 5V N008 1k
+XU7 N002 N001 15V -15V N001 AD817
+V4 Vtriang 0 PULSE(-1.5 1.5 0 2.5u 2.5u 0 5u)
+C1 error N005 {C}
+C2 N010 0 {C}
+.model D D
+.lib C:\Users\emanu\Documents\LTspiceXVII\lib\cmp\standard.dio
+.include UCC20520.301
+* Fuentes
+* Bibliotecas
+* Salida
+.include PHB27NQ10T.lib
+.include BS170.301
+.include LM311.301
+* Directivas SPICE
+* Entrada
+* Etapa de salida
+.options numdgt = 15
+* Doble precision
+.options plotwinsize = 0
+* Deshabilitar la compresion
+.param freq=20k
+.param time=500u+10/{freq}
+.tran 0 {time} 500u uic
+.four {freq} {Narm} -1 V(vo)
+.include AD817.301
+.include TL082.301
+.param Narm table(freq, 1k, 9, 10k, 6, 20k, 3)
+* Numero de armonicos segun frecuencia
+* Tiempo de simulacion para 10 períodos
+* NO TOCAR ESTAS DIRECTIVAS
+* Resistencias del amplificador de error. La ganancia es R/100
+* Frecuencia de entrada
+.param vin=1.1
+* Tension de entrada pico a pico
+* Dead-Time
+* Generador PWM
+* Tantalio > 1u, 50V
+* Hoja de datos, página 28
+* C-BOOT > (Qg + Ivdd/fsw)/0.5
+* Bootstrap
+* 1u, 50V
+* Lo mas cerca posible de Vdd, Vss
+* C-AC para reducir impedancia en AC
+* Hoja de datos, página 28
+* Cvdd tambien entrega corriente a VDDA a traves de D1
+* C-VDDB: 50V, 10u MLCC\nC-VDDB2: 50V, 220n MLCC
+* C-LONG: 50V, 10u Electrolitico o Tantalio. \nSolo es necesario si las fuentes estan lejos de VDDB
+* Filtro para ruido de PCB
+* Hoja de datos, página 29
+* Hoja de datos, página 24
+* Filtro
+* Etapa de salida
+.param R=8.2k
+.param C=220p
+.param fc=100k
+.backanno
+.end

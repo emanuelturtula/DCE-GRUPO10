@@ -1,0 +1,61 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -32 -32 32 0
+LINE Normal -32 32 32 0
+LINE Normal -32 -32 -32 32
+LINE Normal -28 -16 -20 -16
+LINE Normal -28 16 -20 16
+LINE Normal -24 20 -24 12
+LINE Normal -26 -37 -18 -37
+LINE Normal -22 -41 -22 -33
+LINE Normal -27 38 -19 38
+LINE Normal 48 16 60 16
+LINE Normal 48 0 48 16
+LINE Normal 32 0 48 0
+LINE Normal 48 -16 48 0
+LINE Normal 60 -16 48 -16
+LINE Normal -16 -24 -16 -44
+LINE Normal -16 44 -16 24
+LINE Normal 16 8 16 28
+LINE Normal 0 16 0 44
+LINE Normal 16 48 7 48
+LINE Normal 14 51 9 51
+LINE Normal 12 54 11 54
+LINE Normal 23 34 23 28
+LINE Normal 27 34 23 34
+LINE Normal 30 34 30 28
+LINE Normal 34 34 30 34
+LINE Normal 32 31 30 31
+LINE Normal 34 28 30 28
+LINE Normal 61 -3 61 -9
+LINE Normal 68 -3 61 -3
+LINE Normal 68 -9 68 -3
+LINE Normal 61 -9 68 -9
+LINE Normal 69 -2 65 -6
+WINDOW 0 16 -32 Left 2
+SYMATTR Prefix X
+SYMATTR SpiceModel TL3016
+PIN -32 16 NONE 0
+PINATTR PinName In+
+PINATTR SpiceOrder 1
+PIN -32 -16 NONE 0
+PINATTR PinName In-
+PINATTR SpiceOrder 2
+PIN -16 -48 NONE 0
+PINATTR PinName V+
+PINATTR SpiceOrder 3
+PIN -16 48 NONE 0
+PINATTR PinName V-
+PINATTR SpiceOrder 4
+PIN 64 -16 NONE 0
+PINATTR PinName Q
+PINATTR SpiceOrder 5
+PIN 64 16 NONE 0
+PINATTR PinName Qneg
+PINATTR SpiceOrder 6
+PIN 16 32 NONE 8
+PINATTR PinName LE
+PINATTR SpiceOrder 7
+PIN 0 48 NONE 8
+PINATTR PinName GND
+PINATTR SpiceOrder 8

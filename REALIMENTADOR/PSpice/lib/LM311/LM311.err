@@ -1,0 +1,7 @@
+STATUS: PSpice Schematics to Capture translator (17.2.0.d001)
+STATUS:  
+STATUS: Translator started at Friday, April 03, 2020 15:54:53
+INFO(ORSCH-1029): Using existing library 'D:\Cadence\Cadence_SPB_17.2-2016\tools\Capture\Library\PSpice\modeled.etc'.
+INFO(ORSCH-1029): Using existing library 'C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\LM311\LM311.olb'.
+STATUS: Translator stopped at Friday, April 03, 2020 15:55:17
+STATUS: 0 Error messages, 0 Warning messages

@@ -1,0 +1,48 @@
+(ExpressProject "UCC20520_TRANS"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\ucc20520dw_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\ucc20520_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\ucc20520_trans-pspicefiles\published_schematic\tran.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ucc20520_trans-pspicefiles\published_schematic\tran.sim"
+        (DisplayName "PUBLISHED_SCHEMATIC-tran")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\ucc20520_trans.lib"
+        (Type "Schematic Library")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 264 0 266"))
+      (Tab 0)))
+  (MPSSessionName "x0240084")
+  (PartMRUSelector
+    (UCC20520DW_TRANS
+      (FullPartName "UCC20520DWR.Normal")
+      (LibraryName
+         "C:\ELABTRANS_WS\ELABTRANS_DS\PART_NUMBERS\UCC20520\RELEASE_SANKALP\PSPICE\UCC20520_PSPICE_TRANS\UCC20520DW_TRANS.OLB")
+      (DeviceIndex "0"))))

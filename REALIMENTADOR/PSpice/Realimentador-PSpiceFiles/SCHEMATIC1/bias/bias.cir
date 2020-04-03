@@ -1,0 +1,24 @@
+** Profile: "SCHEMATIC1-bias"  [ C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador-pspicefiles\schematic1\bias.sim ] 
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lib/ucc20520_pspice_trans/ucc20520_trans.lib" 
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS SOLVER= 1
+.OPTIONS METHOD= Default
+.OPTIONS THREADS= 12
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

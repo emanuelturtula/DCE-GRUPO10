@@ -1,0 +1,13 @@
+STATUS: PSpice Model Import Wizard for "Capture" (17.2.0.d001)
+STATUS:  
+   INFO: LIB driven flow
+   INFO: Input File: C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\LM311\LM311.lib
+   INFO: Output File: C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\LM311\LM311.olb
+STATUS:  
+STATUS: Identifying matching symbols automatically...started at Friday, April 03, 2020 15:54:53
+STATUS:  
+   INFO: Symbol "LM311" already exists for model "LM311".
+STATUS:  
+STATUS: Completed identifying matching symbols automatically...at Friday, April 03, 2020 15:54:53
+STATUS:  
+STATUS: 0 Error messages, 0 Warning messages

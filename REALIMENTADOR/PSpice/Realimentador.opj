@@ -1,0 +1,204 @@
+(ExpressProject "Realimentador"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library"))
+      (File ".\lib\ucc20520_pspice_trans\ucc20520dw_trans.olb"
+        (Type "Schematic Library"))
+      (File ".\library1.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "realimentador.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\realimentador-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\lib\ucc20520_pspice_trans\ucc20520_trans.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\lib\ucc20520_pspice_trans\ucc20520_trans.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\realimentador-pspicefiles\schematic1\tran.sim"
+        (DisplayName "SCHEMATIC1-tran")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\realimentador-pspicefiles\schematic1\tran.sim")))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (UCC20520DW_TRANS
+      (FullPartName "UCC20520DWR.Normal")
+      (LibraryName
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\LIB\UCC20520_PSPICE_TRANS\UCC20520DW_TRANS.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (MURS320T3G
+      (FullPartName "MURS320T3G.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (PHB27NQ10T/PLP
+      (FullPartName "PHB27NQ10T/PLP.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\PHIL_FET.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (MURS120T3G
+      (FullPartName "MURS120T3G.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (UCC20520_TRANS
+      (FullPartName "UCC20520_TRANS.Normal")
+      (LibraryName
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\LIB\UCC20520\UCC20520_TRANS.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice")
+  (MPSSessionName "emanu")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn")
+      (Path "Design Resources"
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 537")
+        (Scroll "0 75")
+        (Zoom "174")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Generador de PWM"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1498 156 615")
+        (Scroll "-162 85")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Fuentes"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1524 182 641")
+        (Scroll "-162 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Logica de control"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1550 208 667")
+        (Scroll "-162 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Etapa de salida"))))

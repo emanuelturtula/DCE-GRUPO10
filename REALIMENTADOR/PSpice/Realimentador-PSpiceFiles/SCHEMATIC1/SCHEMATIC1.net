@@ -1,0 +1,41 @@
+* source REALIMENTADOR
+V_V2         VTRIANG 0  
++PULSE -1.5 1.5 0 2.499u 2.499u 1n 5u
+V_V3         VCC 0 30Vdc
+V_V5         5V 0 5Vdc
+V_V4         0 VEE 30Vdc
+X_U2         VSIN VTRIANG VCC VEE N23431 0 LM311 
+V_V6         VSIN 0  
++SIN 0 1.1 1k 0 0 0
+R_R12         N23431 5V  1k TC=0,0 
+R_R2         N24524 N24432  10 TC=0,0 
+C_C1         0 N24776  2.2n  TC=0,0 
+V_V1         N24524 VEE 12Vdc
+C_C3         VEE N24524  10u  TC=0,0 
+R_R9         N24692 0  1 TC=0,0 
+R_R10         0 N24720  1 TC=0,0 
+R_R8         N24604 0  1 TC=0,0 
+C_C2         VEE N24524  10u  TC=0,0 
+C_C5         VS N24414  1u  TC=0,0 
+D_D6         N24432 N24414 D1N4148 
+C_C6         VS N24414  100n  TC=0,0 
+C_C4         VEE N24524  220n  TC=0,0 
+R_R1         0 N24776  2.2k TC=0,0 
+R_R11         0 N24634  1 TC=0,0 
+X_U1         0 N24776 0 N24634 N24720 N24692 N24604 HO LO PWM_IN 5V 5V N24414
++  N24524 VS VEE UCC20520_TRANS
+R_R13         PWM_IN N23431  51 TC=0,0 
+C_C10         0 PWM_IN  33p  TC=0,0 
+R_R4         HO N26343  3.3 TC=0,0 
+L_L1         VS VO  33u  
+D_D3         N26337 HO MURS320T3G 
+C_C7         VS N26343  1n  TC=0,0 
+R_R7         0 VO  8 TC=0,0 
+D_D4         N26555 LO MURS320T3G 
+C_C9         0 VO  330n  TC=0,0 
+X_M1         VCC N26343 VS PHB27NQ10T/PLP
+R_R5         N26337 N26343  1.2 TC=0,0 
+R_R6         N26555 N26561  1.2 TC=0,0 
+X_M2         VS N26561 VEE PHB27NQ10T/PLP
+R_R3         LO N26561  3.3 TC=0,0 
+C_C8         VEE N26561  1n  TC=0,0 

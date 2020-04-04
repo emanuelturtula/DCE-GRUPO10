@@ -1,0 +1,220 @@
+
+**** 04/04/20 14:54:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\Calculo-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10000 1 10Meg
+.OPTIONS ADVCONV
+.OPTIONS SOLVER= 1
+.OPTIONS METHOD= Default
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CALCULO
+X_U1         N15125 N14512 VCC VEE N14512 AD817/AD
+X_U2         N14574 N14519 VCC VEE ERROR AD817/AD
+V_V1         VCC 0 15
+V_V2         0 VEE 15
+C_C1         N14519 ERROR  220p  TC=0,0 
+C_C2         0 N14574  220p  TC=0,0 
+R_R1         0 N14574  100k TC=0,0 
+R_R2         ERROR N14519  100k TC=0,0 
+R_R3         N14512 N14519  1k TC=0,0 
+R_R4         0 N14574  1k TC=0,0 
+V_V3         VF 0  AC 1
++SIN 0 0 0 0 0 0
+R_R5         N15125 VF  19k TC=0,0 
+R_R6         0 N15125  1k TC=0,0 
+L_L1         VS VO  33u  
+C_C3         0 VO  330n  TC=0,0 
+R_R7         0 VO  8 TC=0,0 
+X_U3         N15681 VS awbdelay PARAMS: DELAY=150n
+E_E1         N15681 0 ERROR 0 20
+
+**** RESUMING bias.cir ****
+.END
+
+**** 04/04/20 14:54:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\Calculo-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DX         X_U2.DX         
+          IS   10.000000E-15   10.000000E-15 
+
+
+**** 04/04/20 14:54:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\Calculo-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QN         X_U2.QN         
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  100.000000E-18  100.000000E-18 
+          BF  151.52          151.52         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/04/20 14:54:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\Calculo-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VF)    0.0000  (   VO)    5.7772  (   VS)    5.7772  (  VCC)   15.0000      
+
+(  VEE)  -15.0000  (ERROR)     .3069  (N14512)    -.0026 (N14519)    -.0028     
+
+(N14574)    -.0032 (N15125)    -.0031 (N15681)    6.1383 (X_U1.3)    -.0026     
+
+(X_U1.4)   14.4100 (X_U1.5)   14.4100 (X_U1.6)    -.7587 (X_U1.7)    -.7587     
+
+(X_U1.8)   -1.3272 (X_U1.9)    -.0026 (X_U2.3)    -.0027 (X_U2.4)   14.4100     
+
+(X_U2.5)   14.4100 (X_U2.6)    -.7589 (X_U2.7)    -.7588 (X_U2.8)   -1.3274     
+
+(X_U2.9)     .3069 (X_U3.3)    5.7772 (X_U1.10)   13.1700                       
+
+(X_U1.11)  -13.1700                   (X_U1.14)    -.0029                       
+
+(X_U1.15)-2.852E-09                   (X_U1.31)    -.0026                       
+
+(X_U1.32)-2574.1000                   (X_U1.33)    -.0026                       
+
+(X_U1.34)-2574.1000                   (X_U1.35)    -.0026                       
+
+(X_U1.36)    -.0026                   (X_U1.40)    -.0026                       
+
+(X_U1.41)    -.0426                   (X_U1.42)     .0374                       
+
+(X_U1.45)    -.0026                   (X_U1.60)    -.4908                       
+
+(X_U1.61)    0.0000                   (X_U1.62)    0.0000                       
+
+(X_U1.98)    0.0000                   (X_U2.10)   13.1700                       
+
+(X_U2.11)  -13.1700                   (X_U2.14)    -.0030                       
+
+(X_U2.15)-3.015E-09                   (X_U2.31)     .3069                       
+
+(X_U2.32) 306.9E+03                   (X_U2.33)     .3069                       
+
+(X_U2.34) 306.9E+03                   (X_U2.35)     .3069                       
+
+(X_U2.36)     .3069                   (X_U2.40)     .3069                       
+
+(X_U2.41)     .2669                   (X_U2.42)     .3469                       
+
+(X_U2.45)     .3069                   (X_U2.60)    -.4877                       
+
+(X_U2.61)    0.0000                   (X_U2.62)    0.0000                       
+
+(X_U2.98)    0.0000                   (X_U3.AWBDELAY_DUMMY)    1.0000       
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.400E-02
+    V_V2        -1.400E-02
+    V_V3        -1.633E-07
+    X_U1.V1      1.318E-11
+    X_U1.V2      1.318E-11
+    X_U1.V7     -5.008E-13
+    X_U1.V8      1.742E-06
+    X_U1.V5     -4.785E-14
+    X_U1.V6     -4.790E-14
+    X_U2.V1      1.287E-11
+    X_U2.V2      1.349E-11
+    X_U2.V7     -4.977E-13
+    X_U2.V8      1.549E-06
+    X_U2.V5     -4.784E-14
+    X_U2.V6     -4.790E-14
+
+    TOTAL POWER DISSIPATION   4.20E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/04/20 14:54:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\Calculo-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.11
+

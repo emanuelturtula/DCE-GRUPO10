@@ -1,0 +1,27 @@
+* AD817 SPICE Macro-model     
+* Description: Amplifier
+* Generic Desc: High Speed, Low Power Wide Vs Op Amp
+* Developed by: ARG / ADI
+* Revision History: 08/10/2012 - Updated to new header style
+* 1.0 (11/1992)
+* Copyright 1993, 2012 by Analog Devices, Inc.
+*
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+* BEGIN Notes:
+*
+* Not Modeled:
+*    
+* Parameters modeled include: 
+*
+* END Notes
+*
+* Node assignments
+*                non-inverting input
+*                |  inverting input
+*                |  |  positive supply
+*                |  |  |  negative supply
+*                |  |  |  |  output
+*                |  |  |  |  |
+*$

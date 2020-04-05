@@ -9,19 +9,9 @@
            "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\analog.olb")
         (Type "Schematic Library"))
       (File
-         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb"
-        (DisplayName
-           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb")
-        (Type "Schematic Library"))
-      (File
          "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb"
         (DisplayName
            "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb")
-        (Type "Schematic Library"))
-      (File
-         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb"
-        (DisplayName
-           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb")
         (Type "Schematic Library"))
       (File
          "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb"
@@ -30,7 +20,10 @@
         (Type "Schematic Library"))
       (File ".\lib\ucc20520_pspice_trans\ucc20520dw_trans.olb"
         (Type "Schematic Library"))
-      (File ".\lib\ad817\ad817.olb"
+      (File
+         "d:\cadence\cadence_spb_17.2-2016\tools\capture\library\pspice\opamp.olb"
+        (Type "Schematic Library"))
+      (File ".\lib\lm311\lm311.olb"
         (Type "Schematic Library")))
     (NoModify)
     (File "realimentador.dsn"
@@ -65,6 +58,21 @@
       (ActiveProfile ".\realimentador-pspicefiles\schematic1\tran.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (TL082
+      (FullPartName "TL082.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (AD817/AD
+      (FullPartName "AD817/AD.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
+      (DeviceIndex "0"))
+    (TL082/301/TI
+      (FullPartName "TL082/301/TI.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "0"))
     (LM311
       (FullPartName "LM311.Normal")
       (LibraryName
@@ -85,20 +93,10 @@
       (LibraryName
          "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (TL082/301/TI
-      (FullPartName "TL082/301/TI.Normal")
-      (LibraryName
-         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
-      (DeviceIndex "0"))
     (MURS120T3G
       (FullPartName "MURS120T3G.Normal")
       (LibraryName
          "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
-      (DeviceIndex "0"))
-    (AD817/AD
-      (FullPartName "AD817/AD.Normal")
-      (LibraryName
-         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
       (DeviceIndex "0"))
     (AD817
       (FullPartName "AD817.Normal")
@@ -182,38 +180,16 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 420"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 511")
-        (Scroll "-372 0")
-        (Zoom "87")
+        (Scroll "9 0")
+        (Zoom "86")
         (Occurrence "/"))
       (Path
          "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "Generador de PWM"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 1368 26 485")
-        (Scroll "-225 0")
-        (Zoom "87")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "Logica de control"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1394 52 511")
-        (Scroll "-162 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "Etapa de salida"))))
+      (Page "AMPLIFICADOR"))))

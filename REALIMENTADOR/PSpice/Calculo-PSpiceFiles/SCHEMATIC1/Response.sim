@@ -3,7 +3,7 @@
 @Settings: 2 1
 @General:
 ProfileName= "Response" 
-ProfileFile= "Response.sim" 
+ProfileFile= "response.sim" 
 Connectivity= "SCHEMATIC1.net" 
 NetlistFile= "Response.cir" 
 DataFile= "Response.dat" 

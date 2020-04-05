@@ -11,8 +11,8 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 2m 1m 
-.FOUR 10E3 6 V([VO]) 
+.TRAN  0 11m 1m 
+.FOUR 1E3 9 V([VO]) 
 .OPTIONS ADVCONV
 .OPTIONS SOLVER= 1
 .OPTIONS METHOD= Default

@@ -1,27 +1,23 @@
 * source CALCULO
-X_U1         N15125 N14512 VCC VEE N14512 AD817/AD
-X_U2         N14574 N14519 VCC VEE ERROR AD817/AD
 V_V1         VCC 0 15
 V_V2         0 VEE 15
-C_C1         N14519 ERROR  220p  TC=0,0 
-C_C2         0 N14574  220p  TC=0,0 
-R_R1         0 N14574  100k TC=0,0 
-R_R2         ERROR N14519  100k TC=0,0 
+R_R1         0 N14574  220k TC=0,0 
+R_R2         N14550 N14519  220k TC=0,0 
 R_R3         N14512 N14519  1k TC=0,0 
 R_R4         0 N14574  1k TC=0,0 
-V_V3         VF 0  AC 1
+V_V3         N20948 0  AC 1
 +SIN 0 0 0 0 0 0
-R_R5         N15125 VF  19k TC=0,0 
+R_R5         N15125 N20948  19k TC=0,0 
 R_R6         0 N15125  1k TC=0,0 
 L_L1         VS VO  33u  
 C_C3         0 VO  330n  TC=0,0 
 R_R7         0 VO  8 TC=0,0 
 X_U3         N15681 VS awbdelay PARAMS: DELAY=150n
 E_E1         N15681 0 ERROR 0 20
-E_E2         -VS 0 VS 0 -1
+E_E2         -VO 0 VO 0 -1
 R_R12         0 N18087  1k TC=0,0 
-R_R14         0 N18087  82k TC=0,0 
-R_R11         ERROR2 N17783  82k TC=0,0 
+R_R14         0 N18087  8.2k TC=0,0 
+R_R11         ERROR2 N17783  8.2k TC=0,0 
 E_E4         -TL082 0 VS2 0 -1
 X_U6         N17993 VS2 awbdelay PARAMS: DELAY=150n
 L_L2         VS2 N18017  33u  
@@ -37,3 +33,9 @@ C_C6         0 N18087  220p  TC=0,0
 R_R13         0 N18017  8 TC=0,0 
 X_U7A         N18087 N17783 VCC VEE ERROR2 TL082/301/TI
 X_U7B         N17609 N17635 VCC VEE N17635 TL082/301/TI
+X_U9         N14574 N14519 VCC VEE N14550 AD817/AD
+X_U11         N15125 N14512 VCC VEE N14512 AD817/AD
+C_C7         N15125 N20948  39p  TC=0,0 
+C_C8         N14550 ERROR  82p  TC=0,0 
+R_R15         N14550 ERROR  9k TC=0,0 
+R_R16         0 ERROR  1k TC=0,0 

@@ -14,13 +14,13 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 1 0 0 
-+0 "2m" 
++0 "11m" 
 +1 "" 
 +2 "1m" 
 +3 "" 
-+4 "10E3" 
++4 "1E3" 
 +5 "V(VO)" 
-+6 "6" 
++6 "9" 
 @End Analysis
 @Analysis: 1 0
 +2 0 0

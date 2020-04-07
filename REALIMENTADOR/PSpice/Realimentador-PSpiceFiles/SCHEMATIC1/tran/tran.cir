@@ -11,12 +11,13 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 11m 1m 
-.FOUR 1E3 9 V([VO]) 
+.TRAN  0 1.5m 1m 
+.FOUR 20E3 3 V([VO]) 
 .OPTIONS ADVCONV
 .OPTIONS SOLVER= 1
 .OPTIONS METHOD= Default
 .OPTIONS THREADS= 8
+.OPTIONS SPEED_LEVEL= 0
 .AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

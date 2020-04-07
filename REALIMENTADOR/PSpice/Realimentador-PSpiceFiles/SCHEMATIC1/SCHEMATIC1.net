@@ -2,17 +2,17 @@
 V_V3         VCC 0 30Vdc
 V_V5         5V 0 5Vdc
 V_V4         0 VEE 30Vdc
-V_V6         N32277 0  
-+SIN 0 1.1 1k 0 0 0
+V_V6         VERROR 0  
++SIN 0 1.1 20k 0 0 0
 V_V7         0 -5V 5Vdc
 V_V8         15V 0 15Vdc
 V_V9         0 -15V 15Vdc
-R_R14         N32061 VS  19k TC=0,0 
+R_R14         N32061 0  19k TC=0,0 
 R_R15         0 N32061  1k TC=0,0 
-R_R16         N32277 N32249  1k TC=0,0 
+R_R16         0 N32249  1k TC=0,0 
 R_R17         0 N32249  82k TC=0,0 
 R_R18         N36230 N36112  1k TC=0,0 
-R_R19         N36230 VERROR  82k TC=0,0 
+R_R19         N36230 N36267  82k TC=0,0 
 V_V2         VTRIANG 0  
 +PULSE -1.5 1.5 0 2.499u 2.499u 1n 5u
 R_R21         PWM_IN N37031  51 TC=0,0 
@@ -48,7 +48,7 @@ D_D4         N41692 LO MURS320T3G
 R_R5         N41468 N41474  1.2 TC=0,0 
 R_R7         0 VO  8 TC=0,0 
 C_C9         0 VO  330n  TC=0,0 
-X_U9         N32249 N36230 15V -15V VERROR AD817/AD
+X_U9         N32249 N36230 15V -15V N36267 AD817/AD
 X_U11         N32061 N36112 15V -15V N36112 AD817/AD
-C_C15         N36230 VERROR  220p  TC=0,0 
+C_C15         N36230 N36267  220p  TC=0,0 
 C_C16         0 N32249  220p  TC=0,0 

@@ -58,6 +58,16 @@
       (ActiveProfile ".\realimentador-pspicefiles\schematic1\tran.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
     (TL082
       (FullPartName "TL082.Normal")
       (LibraryName
@@ -82,16 +92,6 @@
       (FullPartName "LM311/301/TI.Normal")
       (LibraryName
          "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
-      (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
-      (LibraryName
-         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (MURS120T3G
       (FullPartName "MURS120T3G.Normal")
@@ -175,18 +175,21 @@
          "C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn"
          "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn"
+         "Design Cache" "0"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 420"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 511")
-        (Scroll "9 0")
+        (Scroll "0 9")
         (Zoom "86")
         (Occurrence "/"))
       (Path

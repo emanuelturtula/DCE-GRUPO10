@@ -1,0 +1,170 @@
+(ExpressProject "Calculo"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File
+         "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "calculo.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\calculo-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\calculo-pspicefiles\schematic1\response.sim"
+        (DisplayName "SCHEMATIC1-Response")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\calculo-pspicefiles\schematic1\response.sim")))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (TL082
+      (FullPartName "TL082.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (AD817/AD
+      (FullPartName "AD817/AD.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
+      (DeviceIndex "0"))
+    (TL082/301/TI
+      (FullPartName "TL082/301/TI.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "0"))
+    (INCLUDE
+      (FullPartName "INCLUDE.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (E
+      (FullPartName "E.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (DELAY
+      (FullPartName "DELAY.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\FUNCTION.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (EPOLY
+      (FullPartName "EPOLY.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSFFM
+      (FullPartName "VSFFM.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "D:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice")
+  (MPSSessionName "emanu")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1472 130 589")
+        (Scroll "110 0")
+        (Zoom "174")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\CALCULO.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 1368 26 485")
+        (Scroll "413 100")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\CALCULO.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2"))))

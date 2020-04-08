@@ -1,0 +1,312 @@
+
+**** 04/05/20 17:05:55 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Response"  [ c:\users\emanu\desktop\dce-grupo10\realimentador\pspice\calculo-pspicefiles\schematic1\response
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Response.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10000 1 10Meg
+.OPTIONS ADVCONV
+.OPTIONS SOLVER= 1
+.OPTIONS METHOD= Default
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CALCULO
+V_V1         VCC 0 15
+V_V2         0 VEE 15
+R_R1         0 N14574  220k TC=0,0 
+R_R2         N14550 N14519  220k TC=0,0 
+R_R3         N14512 N14519  1k TC=0,0 
+R_R4         0 N14574  1k TC=0,0 
+V_V3         N20948 0  AC 1
++SIN 0 0 0 0 0 0
+R_R5         N15125 N20948  19k TC=0,0 
+R_R6         0 N15125  1k TC=0,0 
+L_L1         VS VO  33u  
+C_C3         0 VO  330n  TC=0,0 
+R_R7         0 VO  8 TC=0,0 
+X_U3         N15681 VS awbdelay PARAMS: DELAY=150n
+E_E1         N15681 0 ERROR 0 20
+E_E2         -VO 0 VO 0 -1
+R_R12         0 N18087  1k TC=0,0 
+R_R14         0 N18087  8.2k TC=0,0 
+R_R11         ERROR2 N17783  8.2k TC=0,0 
+E_E4         -TL082 0 VS2 0 -1
+X_U6         N17993 VS2 awbdelay PARAMS: DELAY=150n
+L_L2         VS2 N18017  33u  
+V_V4         N17623 0  AC 1
++SIN 0 0 0 0 0 0
+R_R8         N17609 N17623  19k TC=0,0 
+C_C4         N17783 ERROR2  220p  TC=0,0 
+C_C5         0 N18017  330n  TC=0,0 
+R_R9         0 N17609  1k TC=0,0 
+R_R10         N17635 N17783  1k TC=0,0 
+E_E3         N17993 0 ERROR2 0 20
+C_C6         0 N18087  220p  TC=0,0 
+R_R13         0 N18017  8 TC=0,0 
+X_U7A         N18087 N17783 VCC VEE ERROR2 TL082/301/TI
+X_U7B         N17609 N17635 VCC VEE N17635 TL082/301/TI
+X_U9         N14574 N14519 VCC VEE N14550 AD817/AD
+X_U11         N15125 N14512 VCC VEE N14512 AD817/AD
+C_C7         N15125 N20948  39p  TC=0,0 
+C_C8         N14550 ERROR  82p  TC=0,0 
+R_R15         N14550 ERROR  9k TC=0,0 
+R_R16         0 ERROR  1k TC=0,0 
+
+**** RESUMING Response.cir ****
+.END
+
+**** 04/05/20 17:05:55 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Response"  [ c:\users\emanu\desktop\dce-grupo10\realimentador\pspice\calculo-pspicefiles\schematic1\response
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7A.DX        X_U7B.DX        X_U9.DX         X_U11.DX        
+          IS  800.000000E-18  800.000000E-18   10.000000E-15   10.000000E-15 
+
+
+**** 04/05/20 17:05:55 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Response"  [ c:\users\emanu\desktop\dce-grupo10\realimentador\pspice\calculo-pspicefiles\schematic1\response
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U9.QN         X_U11.QN        
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  100.000000E-18  100.000000E-18 
+          BF  151.52          151.52         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/05/20 17:05:55 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Response"  [ c:\users\emanu\desktop\dce-grupo10\realimentador\pspice\calculo-pspicefiles\schematic1\response
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7A.JX        X_U7B.JX        
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12 
+
+
+**** 04/05/20 17:05:55 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Response"  [ c:\users\emanu\desktop\dce-grupo10\realimentador\pspice\calculo-pspicefiles\schematic1\response
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)    1.2403  (   VS)    1.2403  (  -VO)   -1.2403  (  VCC)   15.0000      
+
+(  VEE)  -15.0000  (  VS2) 213.1E-06  (ERROR)     .0659  (-TL082)-213.1E-06     
+
+(ERROR2) 11.32E-06 (N14512)    -.0026 (N14519)    -.0029 (N14550)     .6589     
+
+(N14574)    -.0033 (N15125)    -.0031 (N15681)    1.3178 (N17609)-42.80E-09     
+
+(N17623)    0.0000 (N17635) 10.93E-06 (N17783) 10.93E-06 (N17993) 226.4E-06     
+
+(N18017) 213.1E-06 (N18087)-40.16E-09 (N20948)    0.0000 (X_U3.3)    1.2403     
+
+(X_U6.3) 213.1E-06 (X_U9.3)    -.0028 (X_U9.4)   14.4100 (X_U9.5)   14.4100     
+
+(X_U9.6)    -.7590 (X_U9.7)    -.7589 (X_U9.8)   -1.3274 (X_U9.9)     .6595     
+
+(X_U11.3)    -.0026                   (X_U11.4)   14.4100                       
+
+(X_U11.5)   14.4100                   (X_U11.6)    -.7587                       
+
+(X_U11.7)    -.7587                   (X_U11.8)   -1.3272                       
+
+(X_U11.9)    -.0026                   (X_U7A.6)-1.605E-09                       
+
+(X_U7A.7) 11.33E-06                   (X_U7A.8) 11.33E-06                       
+
+(X_U7A.9)    0.0000                   (X_U7B.6)-1.549E-09                       
+
+(X_U7B.7) 10.93E-06                   (X_U7B.8) 10.93E-06                       
+
+(X_U7B.9)    0.0000                   (X_U9.10)   13.1700                       
+
+(X_U9.11)  -13.1700                   (X_U9.14)    -.0031                       
+
+(X_U9.15)-3.068E-09                   (X_U9.31)     .6595                       
+
+(X_U9.32) 659.5E+03                   (X_U9.33)     .6595                       
+
+(X_U9.34) 659.5E+03                   (X_U9.35)     .6595                       
+
+(X_U9.36)     .6595                   (X_U9.40)     .6595                       
+
+(X_U9.41)     .6195                   (X_U9.42)     .6995                       
+
+(X_U9.45)     .6589                   (X_U9.60)    -.5680                       
+
+(X_U9.61)    0.0000                   (X_U9.62)    0.0000                       
+
+(X_U9.98)    0.0000                   (X_U11.10)   13.1700                      
+
+(X_U11.11)  -13.1700                  (X_U11.14)    -.0029                      
+
+(X_U11.15)-2.852E-09                  (X_U11.31)    -.0026                      
+
+(X_U11.32)-2573.4000                  (X_U11.33)    -.0026                      
+
+(X_U11.34)-2573.4000                  (X_U11.35)    -.0026                      
+
+(X_U11.36)    -.0026                  (X_U11.40)    -.0026                      
+
+(X_U11.41)    -.0426                  (X_U11.42)     .0374                      
+
+(X_U11.45)    -.0026                  (X_U11.60)    -.4914                      
+
+(X_U11.61)    0.0000                  (X_U11.62)    0.0000                      
+
+(X_U11.98)    0.0000                  (X_U7A.10)    -.3986                      
+
+(X_U7A.11)  -14.6550                  (X_U7A.12)  -14.6550                      
+
+(X_U7A.53)   12.8000                  (X_U7A.54)  -12.8000                      
+
+(X_U7A.90) 47.72E-09                  (X_U7A.91)   25.0000                      
+
+(X_U7A.92)  -25.0000                  (X_U7A.99)    0.0000                      
+
+(X_U7B.10)    -.3986                  (X_U7B.11)  -14.6550                      
+
+(X_U7B.12)  -14.6550                  (X_U7B.53)   12.8000                      
+
+(X_U7B.54)  -12.8000                  (X_U7B.90) 42.39E-09                      
+
+(X_U7B.91)   25.0000                  (X_U7B.92)  -25.0000                      
+
+(X_U7B.99)    0.0000                  (X_U3.AWBDELAY_DUMMY)    1.0000           
+
+(X_U6.AWBDELAY_DUMMY)    1.0000       
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.245E-02
+    V_V2        -4.239E-02
+    V_V3        -1.633E-07
+    V_V4        -2.253E-12
+    X_U7A.VB    -1.605E-14
+    X_U7A.VC     1.280E-11
+    X_U7A.VE     1.280E-11
+    X_U7A.VLIM   4.772E-11
+    X_U7A.VLP   -2.500E-11
+    X_U7A.VLN   -2.500E-11
+    X_U7B.VB    -1.549E-14
+    X_U7B.VC     1.280E-11
+    X_U7B.VE     1.280E-11
+    X_U7B.VLIM   4.239E-11
+    X_U7B.VLP   -2.500E-11
+    X_U7B.VLN   -2.500E-11
+    X_U9.V1      1.252E-11
+    X_U9.V2      1.384E-11
+    X_U9.V7     -5.780E-13
+    X_U9.V8      3.445E-05
+    X_U9.V5     -4.727E-14
+    X_U9.V6     -4.847E-14
+    X_U11.V1     1.318E-11
+    X_U11.V2     1.318E-11
+    X_U11.V7    -5.014E-13
+    X_U11.V8     1.786E-06
+    X_U11.V5    -4.784E-14
+    X_U11.V6    -4.790E-14
+
+    TOTAL POWER DISSIPATION   1.27E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/05/20 17:05:55 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Response"  [ c:\users\emanu\desktop\dce-grupo10\realimentador\pspice\calculo-pspicefiles\schematic1\response
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        2.50
+

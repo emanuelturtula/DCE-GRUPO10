@@ -1,18 +1,18 @@
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=2123, size=7577
- lib=D:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\diode.lib, offset=19469, size=328
- lib=D:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\diode.lib, offset=653155, size=252
- lib=D:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\opamp.lib, offset=114813, size=896
- lib=D:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\phil_fet.lib, offset=111553, size=1078
- lib=D:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\anlg_dev.lib, offset=575250, size=2521
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=10937, size=144
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=11623, size=183
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=10867, size=69
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=11213, size=205
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=9701, size=171
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=9873, size=113
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=11082, size=130
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=9987, size=176
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=10164, size=176
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=10341, size=176
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=10518, size=176
- lib=C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib, offset=10695, size=171
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=2123, size=7577
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\diode.lib, offset=19469, size=328
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\diode.lib, offset=653155, size=252
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\opamp.lib, offset=114813, size=896
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\phil_fet.lib, offset=111553, size=1078
+ lib=C:\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\anlg_dev.lib, offset=575250, size=2521
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=10937, size=144
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=11623, size=183
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=10867, size=69
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=11213, size=205
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=9701, size=171
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=9873, size=113
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=11082, size=130
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=9987, size=176
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=10164, size=176
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=10341, size=176
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=10518, size=176
+ lib="C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\ucc20520_pspice_trans\ucc20520_trans.lib", offset=10695, size=171

@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-tran"  [ C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador-pspicefiles\schematic1\tran.sim ] 
+** Profile: "SCHEMATIC1-tran"  [ C:\Users\Comumar\Desktop\Fiuba\Circuitos 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador-pspicefiles\schematic1\tran.sim ] 
 
 ** Creating circuit file "tran.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -7,12 +7,12 @@
 * Profile Libraries :
 * Local Libraries :
 .LIB "../../../lib/ucc20520_pspice_trans/ucc20520_trans.lib" 
-* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 1.5m 1m 
-.FOUR 20E3 3 V([VO]) 
+.TRAN  0 10.5m 1.5m 
+.FOUR 1k 5 V([VO]) 
 .OPTIONS ADVCONV
 .OPTIONS SOLVER= 1
 .OPTIONS METHOD= Default

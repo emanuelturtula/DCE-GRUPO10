@@ -14,13 +14,13 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 1 0 0 
-+0 "1.5m" 
++0 "10.5m" 
 +1 "" 
-+2 "1m" 
++2 "1.5m" 
 +3 "" 
-+4 "20E3" 
++4 "1k" 
 +5 "V(VO)" 
-+6 "3" 
++6 "5" 
 @End Analysis
 @Analysis: 1 0
 +2 0 0
@@ -62,14 +62,14 @@ LoadFile 0 ""
 SaveFile 0 "" 
 @End Analysis
 @Analysis: 5 0
-+0 0
-+0 "" 
-+1 "" 
++0 2
++0 "F" 
++1 "F" 
 +2 "" 
 +3 "" 
-+4 "" 
-+5 "" 
-+6 "" 
++4 "1K" 
++5 "5K" 
++6 "1K" 
 +7 "" 
 @End Analysis
 @Analysis: 6 0

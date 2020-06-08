@@ -58,6 +58,10 @@
       (ActiveProfile ".\realimentador-pspicefiles\schematic1\tran.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (0
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
       (LibraryName
@@ -106,10 +110,6 @@
     (VCC_BAR
       (LibraryName
          "D:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (0
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (D1N4148
       (FullPartName "D1N4148.Normal")
@@ -162,23 +162,13 @@
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory
      "C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\lib\LM311")
-  (MPSSessionName "emanu")
+  (MPSSessionName "Comumar")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn")
-      (Path "Design Resources"
-         "C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn"
-         "SCHEMATIC1")
-      (Path "Design Resources"
-         "C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn"
-         "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Outputs")
-      (Select "Design Resources"
-         "C:\Users\emanu\Desktop\DCE-GRUPO10\REALIMENTADOR\PSpice\realimentador.dsn"
-         "Design Cache" "0"))
+      (Path "PSpice Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -188,11 +178,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 511")
-        (Scroll "0 9")
-        (Zoom "86")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1126 52 387")
+        (Scroll "0 239")
+        (Zoom "97")
         (Occurrence "/"))
       (Path
-         "C:\USERS\EMANU\DESKTOP\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
+         "C:\USERS\COMUMAR\DESKTOP\FIUBA\CIRCUITOS 2\NUEVO\DCE-GRUPO10\REALIMENTADOR\PSPICE\REALIMENTADOR.DSN")
       (Schematic "SCHEMATIC1")
       (Page "AMPLIFICADOR"))))

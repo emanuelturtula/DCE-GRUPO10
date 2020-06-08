@@ -2,14 +2,14 @@
 V_V3         VCC 0 30Vdc
 V_V5         5V 0 5Vdc
 V_V4         0 VEE 30Vdc
-V_V6         VERROR 0  
-+SIN 0 1.1 20k 0 0 0
+V_V6         N47111 0  
++SIN 0 1.1 3k 0 0 0
 V_V7         0 -5V 5Vdc
 V_V8         15V 0 15Vdc
 V_V9         0 -15V 15Vdc
-R_R14         N32061 0  19k TC=0,0 
+R_R14         N32061 VS  19k TC=0,0 
 R_R15         0 N32061  1k TC=0,0 
-R_R16         0 N32249  1k TC=0,0 
+R_R16         N47111 N32249  1k TC=0,0 
 R_R17         0 N32249  82k TC=0,0 
 R_R18         N36230 N36112  1k TC=0,0 
 R_R19         N36230 N36267  82k TC=0,0 
@@ -18,7 +18,7 @@ V_V2         VTRIANG 0
 R_R21         PWM_IN N37031  51 TC=0,0 
 C_C13         0 PWM_IN  33p  TC=0,0 
 R_R20         N37031 5V  1k TC=0,0 
-X_U7         VERROR VTRIANG 15V -15V N37031 0 LM311 
+X_U7         N36267 VTRIANG 15V -15V N37031 0 LM311 
 C_C6         VS N40177  100n  TC=0,0 
 C_C3         VEE N40287  10u  TC=0,0 
 R_R2         N40287 N40195  10 TC=0,0 
